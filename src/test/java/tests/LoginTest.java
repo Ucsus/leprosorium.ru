@@ -25,9 +25,14 @@ public class LoginTest extends TestBase {
         });
         step("Authorization", () -> {
             AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
-            loginPage.username.setValue(config.username());
-            loginPage.password.setValue(config.password()).pressEnter();
+            loginPage.username.setValue("qaguru");
+            loginPage.password.setValue("123JHCoOGU321").pressEnter();
         });
+//        step("Authorization", () -> {
+//            AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
+//            loginPage.username.setValue(config.username());
+//            loginPage.password.setValue(config.password()).pressEnter();
+//        });
         step("Navigation", () -> {
             loginPage.navigationMenu.click();
         });
