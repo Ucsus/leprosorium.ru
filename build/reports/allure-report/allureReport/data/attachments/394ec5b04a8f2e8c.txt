@@ -1,0 +1,2 @@
+[2022-12-15T11:31:18.149Z] [WARNING] https://leprosorium.ru/login/ - [DOM] Found 2 elements with non-unique id #js-auth_form_submit: (More info: https://goo.gl/9p2vKq) %o %o
+[2022-12-15T11:31:18.570Z] [SEVERE] https://stats.g.doubleclick.net/j/collect?t=dc&aip=1&_r=3&v=1&_v=j98&tid=UA-86739-11&cid=851850378.1671103878&jid=1041083650&gjid=48146540&_gid=991183471.1671103878&_u=IEBAAAAAAAAAACAAI~&z=1893899672 - Failed to load resource: net::ERR_CONNECTION_RESET
