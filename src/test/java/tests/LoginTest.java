@@ -38,6 +38,5 @@ public class LoginTest extends TestBase {
         step("Go to qaguru.leprosorium.ru", () -> {
            $(".b-navthing_tab_both_link").click();
         });
-        //sleep(3000);
     }
 }
