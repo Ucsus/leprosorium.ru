@@ -15,7 +15,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 public class LoginTest extends TestBase {
-    public final LoginPage loginPage = new LoginPage();
+    private final LoginPage loginPage = new LoginPage();
     @Test
     void authTest() {
         step("Open main page", () -> {
