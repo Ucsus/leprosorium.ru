@@ -13,8 +13,7 @@ public class LoginPage {
     loginButton = $(".b-login_navigation_auth"),
     loginForm =  $("#js-auth_form"),
     username = $("#js-auth_username"),
-    password = $("#js-auth_password"),
-    navigationMenu = $("#js-navthing");
+    password = $("#js-auth_password");
 
     @Step("Open main page")
     public LoginPage openPage() {
