@@ -23,7 +23,6 @@ public interface WebDriverConfig extends Config {
     String getBrowserSize();
 
     @Key("remote")
-    @DefaultValue("https://user1:1234@selenoid.autotests.cloud/wd/hub")
     String getRemote();
 
     @Key("pageLoad")

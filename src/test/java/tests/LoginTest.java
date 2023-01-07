@@ -16,9 +16,8 @@ import static io.qameta.allure.Allure.step;
 
 public class LoginTest extends TestBase {
     public final LoginPage loginPage = new LoginPage();
-
     @Test
-    void authTest() throws Exception{
+    void authTest() {
         step("Open main page", () -> {
             loginPage.openPage();
         });
@@ -28,20 +27,20 @@ public class LoginTest extends TestBase {
         step("Check login form", () -> {
             loginPage.loginForm.shouldHave(Condition.visible);
         });
-        step("Authorization", () -> {
-            String content = "username=secret-user\npassword=secret-pass";
-            Path secret = Paths.get("/tmp/secret.properties");
-            Files.write(secret, content.getBytes(StandardCharsets.UTF_8));
-            AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
-            loginPage.username.setValue("secret-user");
-            loginPage.password.setValue("secret-pass").pressEnter();
-            Files.delete(secret);
-        });
 //        step("Authorization", () -> {
+//            String content = "username=secret-user\npassword=secret-pass";
+//            Path secret = Paths.get("/resources/auth.properties");
+//            Files.write(secret, content.getBytes(StandardCharsets.UTF_8));
 //            AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
 //            loginPage.username.setValue(config.username());
 //            loginPage.password.setValue(config.password()).pressEnter();
+//            Files.delete(secret);
 //        });
+        step("Authorization", () -> {
+            AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
+            loginPage.username.setValue(config.username());
+            loginPage.password.setValue(config.password()).pressEnter();
+        });
         step("Navigation", () -> {
             loginPage.navigationMenu.click();
         });
