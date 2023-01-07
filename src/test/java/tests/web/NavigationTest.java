@@ -1,7 +1,8 @@
-package tests;
+package tests.web;
 
 import org.junit.jupiter.api.Test;
-import pages.MainPage;
+import tests.web.pages.MainPage;
+import tests.TestBase;
 
 public class NavigationTest extends TestBase {
     private final MainPage mainPage = new MainPage();

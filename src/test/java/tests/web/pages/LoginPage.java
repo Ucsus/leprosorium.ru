@@ -1,4 +1,4 @@
-package pages;
+package tests.web.pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
@@ -10,10 +10,11 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class LoginPage {
     public final SelenideElement
-    loginButton = $(".b-login_navigation_auth"),
-    loginForm =  $("#js-auth_form"),
-    username = $("#js-auth_username"),
-    password = $("#js-auth_password");
+            loginButton = $(".b-login_navigation_auth"),
+            loginForm = $("#js-auth_form"),
+            username = $("#js-auth_username"),
+            password = $("#js-auth_password"),
+            logout = $("#js-header_logout_link");
 
     @Step("Open main page")
     public LoginPage openPage() {
@@ -38,6 +39,12 @@ public class LoginPage {
         AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
         username.setValue(config.username());
         password.setValue(config.password()).pressEnter();
+        return this;
+    }
+
+    @Step("Authorization check")
+    public LoginPage authorizationCheck() {
+        logout.shouldHave(Condition.text("logout"));
         return this;
     }
 }
