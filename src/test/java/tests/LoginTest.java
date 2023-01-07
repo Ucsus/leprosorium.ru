@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 public class LoginTest extends TestBase {
-    private final LoginPage loginPage = new LoginPage();
+    public final LoginPage loginPage = new LoginPage();
 
     @Test
     void authTest() {
@@ -23,16 +23,16 @@ public class LoginTest extends TestBase {
         step("Check login form", () -> {
             loginPage.loginForm.shouldHave(Condition.visible);
         });
-        step("Authorization", () -> {
-            AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
-            loginPage.username.setValue("qaguru");
-            loginPage.password.setValue("123JHCoOGU321").pressEnter();
-        });
 //        step("Authorization", () -> {
 //            AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
-//            loginPage.username.setValue(config.username());
-//            loginPage.password.setValue(config.password()).pressEnter();
+//            loginPage.username.setValue("qaguru");
+//            loginPage.password.setValue("123JHCoOGU321").pressEnter();
 //        });
+        step("Authorization", () -> {
+            AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
+            loginPage.username.setValue(config.username());
+            loginPage.password.setValue(config.password()).pressEnter();
+        });
         step("Navigation", () -> {
             loginPage.navigationMenu.click();
         });
