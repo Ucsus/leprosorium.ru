@@ -15,7 +15,7 @@ public class LoginTest extends TestBase {
     @Story("Тестирование авторизации на сайте")
     @Owner("Ucsus")
     @Severity(SeverityLevel.BLOCKER)
-    @Link(value = "Testing", url = "https://leprosorium.ru/login/")
+    @Link(value = "Test page", url = "https://leprosorium.ru/login/")
     @DisplayName("Проверка на корректный логин")
     void authorizationTest() {
         loginPage.

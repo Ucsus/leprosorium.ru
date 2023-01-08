@@ -21,9 +21,9 @@ public class TestBase {
 
     @AfterEach
     void addAttach() {
-        Attach.addVideo();
+        Attach.addVideo("Видео");
         Attach.browserConsoleLogs();
-        Attach.screenshotAs("Last screenshot");
-        Attach.pageSource();
+        Attach.screenshotAs("Последний скриншот");
+        Attach.pageSource("Код страницы");
     }
 }

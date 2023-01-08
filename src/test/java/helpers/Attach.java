@@ -19,8 +19,8 @@ public class Attach {
         return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
 
-    @Attachment(value = "Page source", type = "text/plain")
-    public static byte[] pageSource() {
+    @Attachment(value = "{attachName}", type = "text/plain")
+    public static byte[] pageSource(String attachName) {
         return getWebDriver().getPageSource().getBytes(StandardCharsets.UTF_8);
     }
 
@@ -31,12 +31,12 @@ public class Attach {
 
     public static void browserConsoleLogs() {
         attachAsText(
-                "Browser console logs",
+                "Логи браузера",
                 String.join("\n", Selenide.getWebDriverLogs(BROWSER)));
     }
 
-    @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
-    public static String addVideo() {
+    @Attachment(value = "{attachName}", type = "text/html", fileExtension = ".html")
+    public static String addVideo(String attachName) {
         return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
                 + getVideoUrl()
                 + "' type='video/mp4'></video></body></html>";
