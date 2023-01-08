@@ -16,25 +16,25 @@ public class LoginPage {
             password = $("#js-auth_password"),
             logout = $("#js-header_logout_link");
 
-    @Step("Open main page")
+    @Step("Открываем главную страницу")
     public LoginPage openPage() {
         open("/login/");
         return this;
     }
 
-    @Step("Login button click")
+    @Step("Кликаем по кнопке логина")
     public LoginPage loginButtonClick() {
         loginButton.click();
         return this;
     }
 
-    @Step("Check login form")
+    @Step("Проверяем видимость формы авторизации")
     public LoginPage loginFormCheck() {
         loginForm.shouldHave(Condition.visible);
         return this;
     }
 
-    @Step("Authorization")
+    @Step("Авторизация")
     public LoginPage authorizationFormFill() {
         AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
         username.setValue(config.username());
@@ -42,7 +42,7 @@ public class LoginPage {
         return this;
     }
 
-    @Step("Authorization check")
+    @Step("Проверка авторизации")
     public LoginPage authorizationCheck() {
         logout.shouldHave(Condition.text("logout"));
         return this;
