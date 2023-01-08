@@ -6,12 +6,11 @@ import org.junit.jupiter.api.Test;
 import tests.web.pages.LoginPage;
 import tests.TestBase;
 
-
 public class LoginTest extends TestBase {
     LoginPage loginPage = new LoginPage();
 
     @Test
-    @Feature("Тетирование авторизации с кооректными данными")
+    @Feature("Тестирование авторизации с кооректными данными")
     @Story("Тестирование авторизации на сайте")
     @Owner("Ucsus")
     @Severity(SeverityLevel.BLOCKER)

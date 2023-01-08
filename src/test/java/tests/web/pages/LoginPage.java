@@ -22,7 +22,7 @@ public class LoginPage {
         return this;
     }
 
-    @Step("Кликаем по кнопке логина")
+    @Step("Вызываем форму авторизации")
     public LoginPage loginButtonClick() {
         loginButton.click();
         return this;
