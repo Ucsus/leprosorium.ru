@@ -48,6 +48,7 @@ dependencies {
 tasks.withType(Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform()
+    systemProperty "chromoptions.prefs", "intl.accept_languages=en"
 
 
     testLogging {
