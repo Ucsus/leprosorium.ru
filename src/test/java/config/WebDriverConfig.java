@@ -8,24 +8,25 @@ import org.aeonbits.owner.Config;
 public interface WebDriverConfig extends Config {
     @Key("baseUrl")
     @DefaultValue("https://leprosorium.ru")
-    String getBaseUrl();
+    String baseUrl();
 
     @Key("browser")
     @DefaultValue("chrome")
-    String getBrowser();
+    String browser();
 
     @Key("browserVersion")
-    @DefaultValue("100")
-    String getBrowserVersion();
+    @DefaultValue("108")
+    String browserVersion();
 
     @Key("browserSize")
     @DefaultValue("1920x1080")
-    String getBrowserSize();
+    String browserSize();
 
     @Key("remote")
-    String getRemote();
+    @DefaultValue("https://user1:1234@selenoid.autotests.cloud/wd/hub")
+    String remote();
 
     @Key("pageLoad")
     @DefaultValue("eager")
-    String getPageLoad();
+    String pageLoad();
 }

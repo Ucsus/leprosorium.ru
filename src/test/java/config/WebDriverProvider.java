@@ -8,23 +8,24 @@ public class WebDriverProvider {
 
     static WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
 
-    public static void config() {
+    public static void configuration() {
 
-        Configuration.baseUrl = WebDriverProvider.config.getBaseUrl();
-        Configuration.browser = WebDriverProvider.config.getBrowser();
-        Configuration.browserVersion = WebDriverProvider.config.getBrowserVersion();
-        Configuration.browserSize = WebDriverProvider.config.getBrowserSize();
-        Configuration.pageLoadStrategy = WebDriverProvider.config.getPageLoad();
-        String remoteUrl = WebDriverProvider.config.getRemote();
+        Configuration.browser = config.browser();
+        Configuration.browserVersion = config.browserVersion();
+        Configuration.browserSize = config.browserSize();
+        Configuration.baseUrl = config.baseUrl();
+        Configuration.pageLoadStrategy = config.pageLoad();
+
+        String remote = config.remote();
+        String remoteUrl = WebDriverProvider.config.remote();
         if (remoteUrl != null) {
-            Configuration.remote = remoteUrl;
+            Configuration.remote = remote;
         }
         DesiredCapabilities capabilities = new DesiredCapabilities();
+        Configuration.browserCapabilities = capabilities;
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
-        Configuration.browserCapabilities = capabilities;
     }
 
 
 }
-
