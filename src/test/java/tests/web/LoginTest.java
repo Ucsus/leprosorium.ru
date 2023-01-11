@@ -14,14 +14,14 @@ public class LoginTest extends TestBase {
     @Story("Тестирование авторизации на сайте")
     @Owner("Ucsus")
     @Severity(SeverityLevel.BLOCKER)
-    @Link(value = "Test page", url = "https://leprosorium.ru/login/")
+    @Link(value = "Login page", url = "https://leprosorium.ru/login/")
     @DisplayName("Проверка на корректный логин")
     void authorizationTest() {
-        loginPage.
-                openPage().
-                loginButtonClick().
-                loginFormCheck().
-                authorizationFormFill().
-                authorizationCheck();
+        loginPage
+                .openPage()
+                .loginButtonClick()
+                .loginFormCheck()
+                .authorizationFormFill()
+                .authorizationCheck();
     }
 }
