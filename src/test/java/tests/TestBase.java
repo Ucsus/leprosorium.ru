@@ -33,7 +33,7 @@ public class TestBase {
     @Step("Авторизация")
     void authorizationTest() {
         loginPage
-                .openPage()
+                .openPage("/login")
                 .loginButtonClick()
                 .loginFormCheck()
                 .authorizationFormFill()

@@ -3,6 +3,7 @@ package tests.web.pages;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
@@ -24,11 +25,12 @@ public class FraudPage {
             buildingInput = $("[name=building]"),
             apartmentInput = $("[name=apartment]"),
             commentsForOrderInput = $("[name=comments_for_order]"),
+            errorMessage = $(".b-fraud_market_order_delivery_description"),
             closeButton = $(".b-fraud_market_basket a");
 
-    @Step("Открываем страницу магазина")
-    public FraudPage openPage() {
-        open("/fraud");
+    @Step("Открываем страницу магазина: {pageUrl}")
+    public FraudPage openPage(String pageUrl) {
+        open(pageUrl);
         return this;
     }
 
@@ -40,37 +42,39 @@ public class FraudPage {
         terms.click();
         return this;
     }
-    @Step("Заполняем форму - Имя")
+
+    @Step("Имя")
     public FraudPage
     setFirstName(String value) {
         firstNameInput.setValue(value);
         return this;
     }
-    @Step("Заполняем форму - Фамилия")
+
+    @Step("Фамилия")
     public FraudPage setLastName(String value) {
         lastNameInput.setValue(value);
         return this;
     }
 
-    @Step("Заполняем форму - Email")
+    @Step("Email")
     public FraudPage setEmail(String value) {
         emailInput.setValue(value);
         return this;
     }
 
-    @Step("Заполняем форму - Телефон")
+    @Step("Телефон")
     public FraudPage setPhone(String value) {
         phoneInput.setValue(value);
         return this;
     }
 
-    @Step("Заполняем форму - Индекс")
+    @Step("Индекс")
     public FraudPage setPostalCode(String value) {
         postalCodeInput.setValue(value);
         return this;
     }
 
-    @Step("Заполняем форму - Регион")
+    @Step("Регион")
     public FraudPage setRegion(String value) {
         regionInput.click();
         $(byText(value)).click();
@@ -78,42 +82,49 @@ public class FraudPage {
         return this;
     }
 
-    @Step("Заполняем форму - Город")
+    @Step("Город")
     public FraudPage setCity(String value) {
         cityInput.click();
         $(byText(value)).click();
         return this;
     }
 
-    @Step("Заполняем форму - Улица")
+    @Step("Улица")
     public FraudPage setStreet(String value) {
         streetInput.setValue(value);
         return this;
     }
 
-    @Step("Заполняем форму - Дом")
+    @Step("Дом")
     public FraudPage setHouse(String value) {
         houseInput.setValue(value);
         return this;
     }
 
-    @Step("Заполняем форму - Корпус")
+    @Step("Корпус")
     public FraudPage setBuilding(String value) {
         buildingInput.setValue(value);
         return this;
     }
 
-    @Step("Заполняем форму - Квартира")
+    @Step("Квартира")
     public FraudPage setApartment(String value) {
         apartmentInput.setValue(value);
         return this;
     }
 
-    @Step("Заполняем форму - Комментарий к заказу")
+    @Step("Комментарий к заказу")
     public FraudPage setCommentForOrder(String value) {
         commentsForOrderInput.setValue(value);
         return this;
     }
+
+    @Step("Сообщение о невозможности доставки товара")
+    public  FraudPage checkMessage() {
+        errorMessage.shouldHave(text("к сожалению"));
+        return this;
+    }
+
 
     @Step("Закрываем форму")
     public FraudPage closeForm() {

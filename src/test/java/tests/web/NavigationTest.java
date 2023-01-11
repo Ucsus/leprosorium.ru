@@ -1,18 +1,17 @@
 package tests.web;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import tests.web.pages.MainPage;
+import tests.web.pages.SearchPage;
 import tests.TestBase;
 
 public class NavigationTest extends TestBase {
-    private final MainPage mainPage = new MainPage();
+    private final SearchPage searchPage = new SearchPage();
 
     @Test
     @DisplayName("Переход на подлепру")
     void navTest() {
-        mainPage.
+        searchPage.
                 openNavigationMenu().
                 openSubSite();
     }

@@ -18,7 +18,7 @@ public class LoginTest extends TestBase {
     @DisplayName("Проверка на корректный логин")
     void authorizationTest() {
         loginPage
-                .openPage()
+                .openPage("/login")
                 .loginButtonClick()
                 .loginFormCheck()
                 .authorizationFormFill()

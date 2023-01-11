@@ -16,9 +16,9 @@ public class LoginPage {
             password = $("#js-auth_password"),
             logout = $("#js-header_logout_link");
 
-    @Step("Открываем главную страницу")
-    public LoginPage openPage() {
-        open("/login/");
+    @Step("Открываем страницу авторизации: {pageUrl}")
+    public LoginPage openPage(String pageUrl) {
+        open(pageUrl);
         return this;
     }
 

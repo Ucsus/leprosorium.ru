@@ -13,7 +13,7 @@ public class FraudTest extends TestBase {
     @DisplayName("Проверка заполнения формы в магазине")
     void fraudFormFillTest() {
         fraudPage
-                .openPage()
+                .openPage("/fraud")
                 .addPinToCart()
                 .setFirstName(firstName)
                 .setLastName(lastName)
