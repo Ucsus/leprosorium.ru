@@ -4,11 +4,13 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static helpers.FakerData.newPost;
 
 public class MainPage {
-    String imageUrl = "\n https://picsum.photos/500.jpg";
+    String imageSource = "https://loremflickr.com/500/500/girl";
+    String imageUrl = "\n <img src=\"" + imageSource + "\">";
     public final SelenideElement
             navigationMenu = $("#js-navthing"),
             subSite = $(".b-navthing_tab_both_link"),
@@ -19,7 +21,13 @@ public class MainPage {
             chatWindow = $("#js-chat_messages_holder"),
             postInput = $("#js-new_post_body"),
             postSubmit = $("#js-new_post_submit"),
-            postText = $(".p_body");
+            postText = $(".p_body"),
+            moderateMenu = $(".b-post_moderate"),
+            deleteLink = $(byText("удалить пост")),
+            confirmButtonOk = $(".b-confirm_button", 0),
+            confirmButtonCancel = $(".b-confirm_button", 1),
+            deleteMessage = $(".futu_dialog_popup_text"),
+            noPosts = $(".b-no_posts");
 
     @Step("Открываем меню навигации")
     public MainPage openNavigationMenu() {
@@ -67,9 +75,25 @@ public class MainPage {
         postSubmit.click();
         return this;
     }
+
     @Step("Проверяем пост")
     public MainPage checkPost() {
         postText.shouldHave(Condition.text(newPost));
         return this;
     }
+
+    @Step("Удаляем верхний пост")
+    public MainPage deleteFirstPost() {
+        moderateMenu.click();
+        deleteLink.click();
+        confirmButtonOk.click();
+        return this;
+    }
+
+    @Step("Проверяем, что пост удалён")
+    public MainPage checkPostDelete() {
+        deleteMessage.shouldHave(Condition.text("Пост удалён"));
+        return this;
+    }
+
 }
