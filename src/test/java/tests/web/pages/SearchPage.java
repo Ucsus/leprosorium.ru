@@ -10,9 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class SearchPage {
     public final SelenideElement
             searchInput = $("[name=query]"),
-            dataSortRating = $("[data-sort=rating]"),
-            navigationMenu = $("#js-navthing"),
-            subSite = $(".b-navthing_tab_both_link");
+            dataSortRating = $("[data-sort=rating]");
 
     public final ElementsCollection
             searchResult = $$("div.b-search_docs_results");
@@ -43,16 +41,4 @@ public class SearchPage {
         return this;
     }
 
-
-    @Step("Open navigation menu")
-    public SearchPage openNavigationMenu() {
-        navigationMenu.click();
-        return this;
-    }
-
-    @Step("Go to qaguru.leprosorium.ru")
-    public SearchPage openSubSite() {
-        subSite.click();
-        return this;
-    }
 }
