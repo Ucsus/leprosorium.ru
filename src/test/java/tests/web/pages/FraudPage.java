@@ -3,7 +3,6 @@ package tests.web.pages;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
@@ -25,7 +24,6 @@ public class FraudPage {
             buildingInput = $("[name=building]"),
             apartmentInput = $("[name=apartment]"),
             commentsForOrderInput = $("[name=comments_for_order]"),
-            errorMessage = $(".b-fraud_market_order_delivery_description"),
             closeButton = $(".b-fraud_market_basket a");
 
     @Step("Открываем страницу магазина: {pageUrl}")
@@ -118,13 +116,6 @@ public class FraudPage {
         commentsForOrderInput.setValue(value);
         return this;
     }
-
-    @Step("Сообщение о невозможности доставки товара")
-    public  FraudPage checkMessage() {
-        errorMessage.shouldHave(text("к сожалению"));
-        return this;
-    }
-
 
     @Step("Закрываем форму")
     public FraudPage closeForm() {

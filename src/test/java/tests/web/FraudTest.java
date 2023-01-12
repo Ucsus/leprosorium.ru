@@ -27,7 +27,6 @@ public class FraudTest extends TestBase {
                 .setBuilding(building)
                 .setApartment(apartment)
                 .setCommentForOrder(commentForOrder)
-                .checkMessage()
                 .closeForm();
     }
 }

@@ -5,8 +5,6 @@ import org.junit.jupiter.api.Test;
 import tests.TestBase;
 import tests.web.pages.SearchPage;
 
-import static com.codeborne.selenide.Selenide.sleep;
-
 public class SearchTest extends TestBase {
     SearchPage searchPage = new SearchPage();
 
