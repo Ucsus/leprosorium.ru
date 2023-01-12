@@ -10,7 +10,6 @@ import static helpers.FakerData.newPost;
 
 public class MainPage {
     String imageSource = "https://loremflickr.com/500/500/girl";
-    String imageUrl = "\n <img src=\"" + imageSource + "\">";
     public final SelenideElement
             navigationMenu = $("#js-navthing"),
             subSite = $(".b-navthing_tab_both_link"),
@@ -71,7 +70,7 @@ public class MainPage {
 
     @Step("Пишем пост")
     public MainPage writePost() {
-        postInput.setValue(newPost + imageUrl);
+        postInput.setValue(newPost + "\n <img src=\"" + imageSource + "\">");
         postSubmit.click();
         return this;
     }
