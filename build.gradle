@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'io.qameta.allure' version '2.10.0'
+    id "io.freefair.lombok" version "6.6.1"
 }
 
 repositories {
@@ -10,9 +11,17 @@ repositories {
 def allureVersion = '2.20.0',
     slf4jVersion = '2.0.5',
     selenideVersion = '6.11.0',
+    jUnitVersion = '5.9.2',
     ownerVersion = '1.0.12',
     fakerVersion = '1.0.2',
-    assertJVersion = '3.24.1'
+    assertJVersion = '3.24.1',
+    restAssuredVersion = '5.3.0',
+    allureRestVersion = '2.20.0',
+    jacksonCoreVersion = '2.14.1',
+    jacksonDataBindVersion = '2.14.1',
+    jacksonAnnotationsVersion = '2.14.1',
+    appiumVersion = '8.3.0',
+    commonsIoVersion = '2.11.0'
 
 allure {
     report {
@@ -42,10 +51,17 @@ dependencies {
             "com.codeborne:selenide:$selenideVersion",
             "org.aeonbits.owner:owner:$ownerVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
-            "org.junit.jupiter:junit-jupiter:5.9.1",
+            "org.junit.jupiter:junit-jupiter:$jUnitVersion",
             "com.github.javafaker:javafaker:$fakerVersion",
             "org.slf4j:slf4j-simple:$slf4jVersion",
-            "org.assertj:assertj-core:$assertJVersion"
+            "org.assertj:assertj-core:$assertJVersion",
+            "io.rest-assured:rest-assured:$restAssuredVersion",
+            "io.qameta.allure:allure-rest-assured:$allureRestVersion",
+            "com.fasterxml.jackson.core:jackson-core:$jacksonCoreVersion",
+            "com.fasterxml.jackson.core:jackson-databind:$jacksonDataBindVersion",
+            "com.fasterxml.jackson.core:jackson-annotations:$jacksonAnnotationsVersion",
+            "io.appium:java-client:$appiumVersion",
+            "commons-io:commons-io:$commonsIoVersion"
     )
 }
 
