@@ -30,7 +30,6 @@ public class MobileDriver implements WebDriverProvider {
     @Override
     public WebDriver createDriver(Capabilities capabilities) {
 
-
         UiAutomator2Options options = new UiAutomator2Options();
         options.merge(capabilities);
 
