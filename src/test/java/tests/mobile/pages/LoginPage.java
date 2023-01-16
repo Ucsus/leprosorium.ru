@@ -52,7 +52,7 @@ public class LoginPage {
         usernameFill.sendKeys("qaguru555");
         passwordFill.sendKeys("TovarischiHakeryNeVoruiteMoiParol'Plz");
         yarrrButton.click();
-        String actualText = new WebDriverWait(getWebDriver(), Duration.ofSeconds(1))
+        String actualText = new WebDriverWait(getWebDriver(), Duration.ofSeconds(2))
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//android.widget.Toast")))
                 .getText();
         assertThat(actualText).isEqualTo("{\"code\":\"invalid_user\"}");

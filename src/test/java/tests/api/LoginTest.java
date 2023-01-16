@@ -1,23 +1,16 @@
 package tests.api;
 
-import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.WebDriverRunner;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import io.restassured.response.ValidatableResponse;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Cookie;
-import tests.api.models.LoginData;
 import tests.api.models.LoginDataResponse;
 
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
-import static helpers.CustomApiListener.withCustomTemplates;
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
-import static tests.api.specs.LoginSpecs.loginRequest;
-import static tests.api.specs.LoginSpecs.loginResponseSpec;
+import static tests.api.specs.Specs.request;
+import static tests.api.specs.Specs.responseSpec;
 
 public class LoginTest {
     String uid = "9278845";
@@ -27,12 +20,12 @@ public class LoginTest {
         String authCookieName = "92788",
                 authCookieValue = "45a8df4360a66d7451dbff297b1bc387";
         given()
-                .spec(loginRequest)
+                .spec(request)
                 .cookie(authCookieName, authCookieValue)
                 .when()
                 .post("/auth/login/")
                 .then()
-                .spec(loginResponseSpec)
+                .spec(responseSpec)
                 .extract().as(LoginDataResponse.class);
 
         open("https://leprosorium.ru/static/i/lepra/lepro_logo_mask.png");
@@ -50,6 +43,8 @@ public class LoginTest {
                         .body("{ \"username\": \"qaguru\", \"password\": \"TovarischiHakeryNeVoruiteMoiParol'Plz\" }")
                         .log().all()
                         .when()
+                        .header("X-Futuware-UID", uid)
+                        .header("X-Futuware-SID", sid)
                         .post("https://leprosorium.ru/api/auth/login/")
                         .then()
                         .log().all()
@@ -57,15 +52,13 @@ public class LoginTest {
                         .extract().as(LoginDataResponse.class);
 
         given()
-                .spec(loginRequest)
-//                .cookie(response.getUid(), response.getSid())
+                .spec(request)
                 .header("X-Futuware-UID", uid)
                 .header("X-Futuware-SID", sid)
-                .cookie(uid + sid)
                 .when()
                 .get("https://leprosorium.ru/api/my/")
                 .then()
-                .spec(loginResponseSpec)
+                .spec(responseSpec)
                 .extract();
 
         open("https://leprosorium.ru/static/i/lepra/lepro_logo_mask.png");
