@@ -5,7 +5,7 @@ import tests.mobile.pages.SearchPage;
 
 import static com.codeborne.selenide.Selenide.sleep;
 
-public class SearchTest extends TestBaseMobile {
+public class SearchTest extends TestBase {
     SearchPage searchPage = new SearchPage();
 
     @Test

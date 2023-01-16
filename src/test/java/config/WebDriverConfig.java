@@ -23,7 +23,7 @@ public interface WebDriverConfig extends Config {
     String browserSize();
 
     @Key("remoteUrl")
-    String remote();
+    String remoteUrl();
 
     @Key("pageLoad")
     @DefaultValue("eager")

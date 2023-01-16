@@ -3,9 +3,7 @@ package tests.mobile;
 import org.junit.jupiter.api.Test;
 import tests.mobile.pages.InboxPage;
 
-import static com.codeborne.selenide.Selenide.sleep;
-
-public class InboxTest extends TestBaseMobile{
+public class InboxTest extends TestBase {
     InboxPage inboxPage = new InboxPage();
 
     @Test

@@ -2,7 +2,6 @@ package tests.web;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import tests.TestBase;
 import tests.web.pages.SearchPage;
 
 public class SearchTest extends TestBase {

@@ -45,8 +45,8 @@ public class MobileDriver implements WebDriverProvider {
     }
 
     private String getAppPath() {
-        String appUrl = "https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/apps/Leprosorium-base.apk";
-        String appPath = "src/test/resources/apps/Leprosorium-base.apk";
+        String appUrl = "https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/apk/Leprosorium-base.apk";
+        String appPath = "src/test/resources/apk/Leprosorium-base.apk";
 
         File app = new File(appPath);
         if (!app.exists()) {

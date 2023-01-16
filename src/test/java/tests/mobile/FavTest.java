@@ -3,7 +3,7 @@ package tests.mobile;
 import org.junit.jupiter.api.Test;
 import tests.mobile.pages.FavPage;
 
-public class FavTest extends TestBaseMobile{
+public class FavTest extends TestBase {
     FavPage favPage = new FavPage();
 
     @Test

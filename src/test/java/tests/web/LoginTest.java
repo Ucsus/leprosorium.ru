@@ -4,7 +4,6 @@ import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import tests.web.pages.LoginPage;
-import tests.TestBase;
 
 public class LoginTest extends TestBase {
     LoginPage loginPage = new LoginPage();
