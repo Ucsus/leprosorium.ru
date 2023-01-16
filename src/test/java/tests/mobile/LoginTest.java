@@ -51,7 +51,7 @@ public class LoginTest {
     @AfterEach
     public void tearDown() {
         Attach.screenshotAs("Последний скриншот");
-        Attach.pageSource();
+        Attach.pageSource("Код страницы");
 
         closeWebDriver();
     }
