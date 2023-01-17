@@ -12,7 +12,7 @@ public class SubSiteTest extends TestBase {
         mainPage.openNavigationMenu().openSubSite();
     }
 
-    @Tag("WEB")
+    @Tag("web")
     @Test
     @DisplayName("Проверка ДискоЧата")
     void discoChatTest() {
@@ -22,7 +22,7 @@ public class SubSiteTest extends TestBase {
                 .closeDiscoChat();
     }
 
-    @Tag("WEB")
+    @Tag("web")
     @Test
     @DisplayName("Проверка постинга")
     void subSitePostTest() {
@@ -31,7 +31,7 @@ public class SubSiteTest extends TestBase {
                 .checkPost();
     }
 
-    @Tag("WEB")
+    @Tag("web")
     @Test
     @DisplayName("Удаление верхнего поста")
     void postModerate() {

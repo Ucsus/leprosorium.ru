@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class NavigationTest extends TestBase {
 
-    @Tag("WEB")
+    @Tag("web")
     @Test
     @DisplayName("Переход на подлепру")
     void navTest() {

@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 public class InboxTest extends TestBase {
 
     @Tag("mobile")
-    @Tag("browserstack")
     @Test
     void inboxTest() {
         loginPage

@@ -8,7 +8,7 @@ import static helpers.FakerData.*;
 
 public class FraudTest extends TestBase {
 
-    @Tag("WEB")
+    @Tag("web")
     @Test
     @DisplayName("Проверка заполнения формы в магазине")
     void fraudFormFillTest() {

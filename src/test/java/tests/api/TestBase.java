@@ -7,7 +7,6 @@ import static helpers.api.CustomApiListener.withCustomTemplates;
 
 
 public class TestBase {
-
     @BeforeAll
     static void setUp() {
         RestAssured.filters(withCustomTemplates());
