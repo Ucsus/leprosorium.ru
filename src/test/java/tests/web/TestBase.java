@@ -38,7 +38,7 @@ public class TestBase {
         }
     @AfterEach
     public void addAttachments() {
-        Attach.screenshotAs();
+        Attach.screenshotAs("Скриншот");
         Attach.pageSource();
         Attach.browserConsoleLogs();
         if (useRemote.equals("remote")) {

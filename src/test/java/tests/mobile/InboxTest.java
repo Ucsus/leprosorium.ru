@@ -9,6 +9,8 @@ public class InboxTest extends TestBase {
     @Tag("browserstack")
     @Test
     void inboxTest() {
+        loginPage
+                .authorizationFormFill();
         inboxPage
                 .openMenu()
                 .titleCheck()

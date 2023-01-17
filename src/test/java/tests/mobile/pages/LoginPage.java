@@ -18,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class LoginPage {
     String username = BrowserWebDriver.config.username();
-    String password = BrowserWebDriver.config.username();
+    String password = BrowserWebDriver.config.password();
 
     public final SelenideElement
             usernameFill = $(AppiumBy.id("ru.leprosorium:id/login")),

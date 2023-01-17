@@ -1,7 +1,6 @@
 package tests.mobile;
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
 import drivers.mobile.BrowserStackMobileDriver;
 import drivers.mobile.EmulationMobileDriver;
 import helpers.Attach;
@@ -14,14 +13,14 @@ import tests.mobile.pages.InboxPage;
 import tests.mobile.pages.LoginPage;
 import tests.mobile.pages.SearchPage;
 
+import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
 import static helpers.Attach.getSessionId;
-import static io.qameta.allure.Allure.step;
 
 public class TestBase {
 
-    static String driver = System.getProperty("mobileDeviceHost", "emulation");
+    static String driver = System.getProperty("mobileHost", "emulation");
     LoginPage loginPage = new LoginPage();
     SearchPage searchPage = new SearchPage();
     FavPage favPage = new FavPage();
@@ -52,7 +51,7 @@ public class TestBase {
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
 
-        step("Close driver", Selenide::closeWebDriver);
+        closeWebDriver();
 
         if (driver.equals("browserstack")) {
             Attach.video(sessionId);

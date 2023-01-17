@@ -30,14 +30,16 @@ public class Attach {
     }
 
     @Attachment(value = "{attachName}", type = "image/png")
-    public static byte[] screenshotAs() {
-        return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
-    }
-
-    @Attachment(value = "{attachName}", type = "image/png")
     public static byte[] screenshotAs(String attachName) {
         return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
+//    @Attachment(value = "{attachName}", type = "image/png")
+//    public static byte[] screenshotAs(String attachName) {
+//        String base64 = WebDriver.findElement(AppiumBy.id("myId").getScreenshotAs(OutputType.BASE64);
+//        base64 = base64.replaceAll("[\n\r]", "");
+//        byte[] bytes = Base64.getDecoder().decode(base64);
+//        return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
+//    }
 
     public static void browserConsoleLogs() {
         attachAsText(

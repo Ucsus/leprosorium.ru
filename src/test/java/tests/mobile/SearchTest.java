@@ -10,6 +10,8 @@ public class SearchTest extends TestBase {
     @Tag("mobile")
     @Test
     void searchPostTest() {
+        loginPage
+                .authorizationFormFill();
         searchPage
                 .openMenu()
                 .searchQuery("Ванна пенопласта");

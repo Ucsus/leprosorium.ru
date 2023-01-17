@@ -8,6 +8,8 @@ public class FavTest extends TestBase {
     @Tag("mobile")
     @Test
     void favouriteTest() {
+        loginPage
+                .authorizationFormFill();
         favPage
                 .openMenu()
                 .titleCheck()
