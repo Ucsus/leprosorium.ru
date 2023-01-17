@@ -5,9 +5,8 @@ import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import tests.api.models.LoginData;
 
-import static helpers.CustomApiListener.withCustomTemplates;
+import static helpers.api.CustomApiListener.withCustomTemplates;
 import static io.restassured.RestAssured.with;
 
 public class Specs {
@@ -15,7 +14,6 @@ public class Specs {
             .filter(withCustomTemplates())
             .baseUri("https://leprosorium.ru")
             .basePath("/api")
-//            .body("{ \"username\": \"qaguru\", \"password\": \"TovarischiHakeryNeVoruiteMoiParol'Plz\" }")
             .log().all()
             .contentType(ContentType.JSON);
 

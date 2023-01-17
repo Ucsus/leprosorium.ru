@@ -1,13 +1,13 @@
 package tests.mobile;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import tests.mobile.pages.SearchPage;
 
 import static com.codeborne.selenide.Selenide.sleep;
 
 public class SearchTest extends TestBase {
-    SearchPage searchPage = new SearchPage();
 
+    @Tag("mobile")
     @Test
     void searchPostTest() {
         searchPage

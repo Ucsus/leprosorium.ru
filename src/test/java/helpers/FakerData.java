@@ -18,5 +18,7 @@ public class FakerData {
             building = faker.address().buildingNumber(),
             apartment = faker.address().buildingNumber(),
             commentForOrder = faker.friends().quote(),
-            newPost = faker.rickAndMorty().quote();
+            newPost = faker.rickAndMorty().quote(),
+            invalidUser = faker.name().username(),
+            invalidPassword = faker.internet().password();
 }

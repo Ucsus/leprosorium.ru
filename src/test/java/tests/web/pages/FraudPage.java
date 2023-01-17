@@ -28,6 +28,7 @@ public class FraudPage {
 
     @Step("Открываем страницу магазина: {pageUrl}")
     public FraudPage openPage(String pageUrl) {
+        sleep(1000);
         open(pageUrl);
         return this;
     }

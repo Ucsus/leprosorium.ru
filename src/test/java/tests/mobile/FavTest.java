@@ -1,11 +1,11 @@
 package tests.mobile;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import tests.mobile.pages.FavPage;
 
 public class FavTest extends TestBase {
-    FavPage favPage = new FavPage();
 
+    @Tag("mobile")
     @Test
     void favouriteTest() {
         favPage

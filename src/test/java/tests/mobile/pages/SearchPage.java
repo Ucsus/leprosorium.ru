@@ -9,10 +9,10 @@ import static com.codeborne.selenide.Selenide.$;
 public class SearchPage {
 
     public final SelenideElement
-    menuButton = $(AppiumBy.className("android.widget.ImageButton")),
-    searchLink = $(AppiumBy.className("android.support.v7.widget.LinearLayoutCompat"), 5),
-    searchInput = $(AppiumBy.id("ru.leprosorium:id/search_src_text")),
-    searchStart = $(AppiumBy.id("ru.leprosorium:id/menu_search"));
+            menuButton = $(AppiumBy.className("android.widget.ImageButton")),
+            searchLink = $(AppiumBy.className("android.support.v7.widget.LinearLayoutCompat"), 5),
+            searchInput = $(AppiumBy.id("ru.leprosorium:id/search_src_text")),
+            searchStart = $(AppiumBy.id("ru.leprosorium:id/menu_search"));
 
 
     @Step("Открываем Поиск")

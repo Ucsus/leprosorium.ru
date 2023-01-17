@@ -1,12 +1,12 @@
 package tests.web;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import tests.web.pages.MainPage;
 
 public class NavigationTest extends TestBase {
-    private final MainPage mainPage = new MainPage();
 
+    @Tag("WEB")
     @Test
     @DisplayName("Переход на подлепру")
     void navTest() {

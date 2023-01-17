@@ -78,3 +78,21 @@ tasks.withType(Test) {
         }
     }
 }
+
+task uiTests(type: Test) {
+    useJUnitPlatform {
+        includeTags "ui"
+    }
+}
+
+task mobileTests(type: Test) {
+    useJUnitPlatform {
+        includeTags "mobile"
+    }
+}
+
+task webTests(type: Test) {
+    useJUnitPlatform {
+        includeTags "web"
+    }
+}

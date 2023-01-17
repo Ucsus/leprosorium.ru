@@ -1,21 +1,22 @@
 package tests.api;
 
-import config.AuthConfig;
+import config.web.WebConfig;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import tests.api.models.LoginData;
-import tests.api.models.LoginDataResponse;
 
 import static io.restassured.RestAssured.given;
 import static tests.api.specs.Specs.request;
 import static tests.api.specs.Specs.responseSpec;
 
-public class DomainsTest {
+public class DomainsTest extends TestBase {
+    @Tag("ui")
     @Test
     @DisplayName("Подлепры, на которые подписан пользователь")
     void checkDomainTest() {
-        AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
+        WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
         LoginData body = new LoginData();
         body.setUsername(config.username());
         body.setPassword(config.password());

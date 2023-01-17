@@ -2,6 +2,8 @@ package tests.mobile.pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import drivers.web.BrowserWebDriver;
+import helpers.FakerData;
 import io.appium.java_client.AppiumBy;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -15,6 +17,9 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class LoginPage {
+    String username = BrowserWebDriver.config.username();
+    String password = BrowserWebDriver.config.username();
+
     public final SelenideElement
             usernameFill = $(AppiumBy.id("ru.leprosorium:id/login")),
             passwordFill = $(AppiumBy.id("ru.leprosorium:id/password")),
@@ -23,8 +28,8 @@ public class LoginPage {
 
     @Step("Авторизация")
     public LoginPage authorizationFormFill() {
-        usernameFill.sendKeys("qaguru");
-        passwordFill.sendKeys("TovarischiHakeryNeVoruiteMoiParol'Plz");
+        usernameFill.sendKeys(username);
+        passwordFill.sendKeys(password);
         yarrrButton.click();
         return this;
     }
@@ -37,8 +42,8 @@ public class LoginPage {
 
     @Step("Неправильный пароль")
     public LoginPage invalidPassword() {
-        usernameFill.sendKeys("qaguru");
-        passwordFill.sendKeys("qwerty12345");
+        usernameFill.sendKeys(username);
+        passwordFill.sendKeys(FakerData.invalidPassword);
         yarrrButton.click();
         String actualText = new WebDriverWait(getWebDriver(), Duration.ofSeconds(1))
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//android.widget.Toast")))
@@ -49,8 +54,8 @@ public class LoginPage {
 
     @Step("Неправильный пользователь")
     public LoginPage invalidUser() {
-        usernameFill.sendKeys("qaguru555");
-        passwordFill.sendKeys("TovarischiHakeryNeVoruiteMoiParol'Plz");
+        usernameFill.sendKeys(FakerData.invalidUser);
+        passwordFill.sendKeys(password);
         yarrrButton.click();
         String actualText = new WebDriverWait(getWebDriver(), Duration.ofSeconds(2))
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//android.widget.Toast")))

@@ -1,4 +1,4 @@
-package helpers;
+package helpers.api;
 
 import io.qameta.allure.restassured.AllureRestAssured;
 

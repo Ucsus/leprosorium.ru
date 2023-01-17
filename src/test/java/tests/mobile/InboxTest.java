@@ -1,11 +1,12 @@
 package tests.mobile;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import tests.mobile.pages.InboxPage;
 
 public class InboxTest extends TestBase {
-    InboxPage inboxPage = new InboxPage();
 
+    @Tag("mobile")
+    @Tag("browserstack")
     @Test
     void inboxTest() {
         inboxPage

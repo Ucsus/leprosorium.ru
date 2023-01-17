@@ -1,30 +1,15 @@
 package tests.api;
 
-import config.AuthConfig;
-import org.aeonbits.owner.ConfigFactory;
+import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeAll;
-import tests.api.models.LoginData;
 
-import static io.restassured.RestAssured.given;
-import static tests.api.specs.Specs.request;
-import static tests.api.specs.Specs.responseSpec;
+import static helpers.api.CustomApiListener.withCustomTemplates;
+
 
 public class TestBase {
-    @BeforeAll
-    void headersGet() {
-        AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
-        LoginData body = new LoginData();
-        body.setUsername(config.username());
-        body.setPassword(config.password());
 
-        LoginData response =
-                given()
-                        .spec(request)
-                        .body(body)
-                        .when()
-                        .post("/auth/login/")
-                        .then()
-                        .spec(responseSpec)
-                        .extract().as(LoginData.class);
+    @BeforeAll
+    static void setUp() {
+        RestAssured.filters(withCustomTemplates());
     }
 }

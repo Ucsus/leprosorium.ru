@@ -1,9 +1,12 @@
-package drivers;
+package drivers.mobile;
 
 import com.codeborne.selenide.WebDriverProvider;
+import config.mobile.EmulationConfig;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
+import io.appium.java_client.remote.AutomationName;
 import lombok.SneakyThrows;
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 
@@ -13,10 +16,9 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import static io.appium.java_client.remote.AutomationName.ANDROID_UIAUTOMATOR2;
 import static org.apache.commons.io.FileUtils.copyInputStreamToFile;
 
-public class MobileDriver implements WebDriverProvider {
+public class EmulationMobileDriver implements WebDriverProvider {
 
     public static URL getAppiumServerUrl() {
         try {
@@ -26,20 +28,20 @@ public class MobileDriver implements WebDriverProvider {
         }
     }
 
+    static EmulationConfig config = ConfigFactory.create(EmulationConfig.class);
+
     @SneakyThrows
     @Override
     public WebDriver createDriver(Capabilities capabilities) {
-
         UiAutomator2Options options = new UiAutomator2Options();
         options.merge(capabilities);
-
-        options.setAutomationName(ANDROID_UIAUTOMATOR2)
-                .setPlatformName("android")
-                .setDeviceName("Pixel_3a_API_33_x86_64")
-                .setPlatformVersion("13.0")
-                .setApp(getAppPath())
-                .setAppPackage("ru.leprosorium")
-                .setAppActivity("ru.leprosorium.MainActivity_");
+        options.setAutomationName(AutomationName.ANDROID_UIAUTOMATOR2);
+        options.setPlatformName(config.platformName());
+        options.setDeviceName(config.deviceName());
+        options.setPlatformVersion(config.platformVersion());
+        options.setApp(getAppPath());
+        options.setAppPackage(config.appPackage());
+        options.setAppActivity(config.appActivity());
 
         return new AndroidDriver(getAppiumServerUrl(), options);
     }

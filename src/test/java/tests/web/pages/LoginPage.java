@@ -2,18 +2,21 @@ package tests.web.pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import config.AuthConfig;
+import drivers.web.BrowserWebDriver;
 import io.qameta.allure.Step;
-import org.aeonbits.owner.ConfigFactory;
 
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class LoginPage {
+    String username = BrowserWebDriver.config.username();
+    String password = BrowserWebDriver.config.password();
+
     public final SelenideElement
             loginButton = $(".b-login_navigation_auth"),
             loginForm = $("#js-auth_form"),
-            username = $("#js-auth_username"),
-            password = $("#js-auth_password"),
+            user = $("#js-auth_username"),
+            pass = $("#js-auth_password"),
             logout = $("#js-header_logout_link");
 
     @Step("Открываем страницу авторизации: {pageUrl}")
@@ -36,9 +39,8 @@ public class LoginPage {
 
     @Step("Авторизация")
     public LoginPage authorizationFormFill() {
-        AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
-        username.setValue(config.username());
-        password.setValue(config.password()).pressEnter();
+        user.setValue(username);
+        pass.setValue(password).pressEnter();
         return this;
     }
 

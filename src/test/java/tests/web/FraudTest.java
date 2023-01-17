@@ -1,13 +1,14 @@
 package tests.web;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import tests.web.pages.FraudPage;
+
 import static helpers.FakerData.*;
 
 public class FraudTest extends TestBase {
-    FraudPage fraudPage = new FraudPage();
 
+    @Tag("WEB")
     @Test
     @DisplayName("Проверка заполнения формы в магазине")
     void fraudFormFillTest() {
