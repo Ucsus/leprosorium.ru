@@ -13,8 +13,6 @@ import static io.restassured.RestAssured.with;
 
 public class Specs {
     static ApiConfig config = ConfigFactory.create(ApiConfig.class);
-//    static String uid = config.uid();
-//    static String sid = config.sid();
     static String username = config.username();
     static String password = config.password();
 
@@ -31,11 +29,4 @@ public class Specs {
             .expectStatusCode(200)
             .build();
 
-    public static RequestSpecification creationRequest = with()
-            .header("X-Futuware-UID", config.uid())
-            .header("X-Futuware-SID", config.sid())
-            .baseUri(config.baseUrl())
-            .basePath(config.basePath())
-            .log().all()
-            .contentType(ContentType.JSON);
 }
