@@ -18,7 +18,7 @@
 
 <a id="stack"></a>
 ## Cтек технологий :hammer_and_wrench:
-<div align="center">
+
 | InteliJ IDEA  | Java | JUnit 5  | Second Header | First Header  | Second Header | First Header  | Second Header | Second Header |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 |<a href="https://www.jetbrains.com/idea/"><img alt="InteliJ IDEA" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Intelij_IDEA.svg" width="50"/></a>  |<a href="https://www.java.com/"><img alt="Java" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Java.svg" width="50"/></a>  | <a href="https://junit.org/junit5/"><img alt="JUnit 5" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/JUnit5.svg" width="50"/></a>  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
@@ -26,8 +26,7 @@
 | First Header  | Second Header | First Header  | Second Header | First Header  | Second Header | First Header  | Second Header | Second Header |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
- 
- </div>
+
 
 
 
