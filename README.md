@@ -18,9 +18,9 @@
 
 <a id="stack"></a>
 ## Cтек технологий :hammer_and_wrench:
-| First Header  | Second Header | First Header  | Second Header | First Header  | Second Header | First Header  | Second Header | Second Header |
+| InteliJ IDEA  | Second Header | First Header  | Second Header | First Header  | Second Header | First Header  | Second Header | Second Header |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+|<a href="https://www.jetbrains.com/idea/"><img alt="InteliJ IDEA" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Intelij_IDEA.svg" width="50"/></a>  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 
 | First Header  | Second Header | First Header  | Second Header | First Header  | Second Header | First Header  | Second Header | Second Header |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
