@@ -19,9 +19,9 @@
 <a id="stack"></a>
 ## Cтек технологий :hammer_and_wrench:
 <div align="center">
-<a href="https://www.jetbrains.com/idea/"><img alt="InteliJ IDEA" height="50" src="/resources/images/logos/Intelij_IDEA.svg" width="50"/></a>
-<a href="https://www.java.com/"><img alt="Java" height="50" src="/images/logos/Java.svg" width="50"/></a>
-<a href="https://junit.org/junit5/"><img alt="JUnit 5" height="50" src="/resources/images/logos/JUnit5.svg" width="50"/></a>
+<a href="https://www.jetbrains.com/idea/"><img alt="InteliJ IDEA" height="50" src="/main/src/test/resources/images/logos/Intelij_IDEA.svg" width="50"/></a>
+<a href="https://www.java.com/"><img alt="Java" height="50" src="/main/src/test/images/logos/Java.svg" width="50"/></a>
+<a href="https://junit.org/junit5/"><img alt="JUnit 5" height="50" src="/main/src/test/resources/images/logos/JUnit5.svg" width="50"/></a>
 <a href="https://selenide.org/"><img alt="Selenide" height="50" src="/resources/images/logos/Selenide.svg" width="50"/></a>
 <a href="https://aerokube.com/selenoid/"><img alt="Selenoid" height="50" src="/resources/images/logos/Selenoid.svg" width="50"/></a>
 <a href="https://gradle.org/"><img alt="Gradle" height="50" src="/resources/images/logos/Gradle.svg" width="50"/></a>
