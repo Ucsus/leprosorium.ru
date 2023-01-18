@@ -39,7 +39,7 @@
 <a href="https://developer.android.com/studio"><img alt="AndroidStudio" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/AndroidStudio.svg" width="50"/></a>
 <a href="https://www.browserstack.com"><img alt="Browserstack" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Browserstack.svg" width="50"/></a>
 <a href="https://appium.io/"><img alt="Appium" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Appium.svg" width="50"/></a>
-<a href="https://rest-assured.i/"><img alt="REST Assured" height="46" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/RestAssured.svg" width="46"/></a>
+<a href="https://rest-assured.i/"><img alt="REST Assured" height="40" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/RestAssured.svg" width="40"/></a>
 
 </div>
 
