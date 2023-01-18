@@ -13,6 +13,7 @@ public class SubSiteTest extends TestBase {
     }
 
     @Tag("web")
+    @Tag("all")
     @Test
     @DisplayName("Проверка ДискоЧата")
     void discoChatTest() {
@@ -23,6 +24,7 @@ public class SubSiteTest extends TestBase {
     }
 
     @Tag("web")
+    @Tag("all")
     @Test
     @DisplayName("Проверка постинга")
     void subSitePostTest() {
@@ -32,6 +34,7 @@ public class SubSiteTest extends TestBase {
     }
 
     @Tag("web")
+    @Tag("all")
     @Test
     @DisplayName("Удаление верхнего поста")
     void postModerate() {

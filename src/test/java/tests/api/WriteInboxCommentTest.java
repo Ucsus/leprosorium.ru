@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class WriteInboxCommentTest extends TestBase{
     @Tag("ui")
+    @Tag("all")
     @Test
     @DisplayName("Новый комментарий в инбокс")
     void writeInboxComment() {

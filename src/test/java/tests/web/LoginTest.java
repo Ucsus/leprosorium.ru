@@ -16,6 +16,7 @@ public class LoginTest extends TestBase {
     }
 
     @Tag("web")
+    @Tag("all")
     @Test
     @Feature("Тестирование авторизации с кооректными данными")
     @Story("Тестирование авторизации на сайте")

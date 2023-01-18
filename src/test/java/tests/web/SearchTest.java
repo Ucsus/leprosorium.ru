@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 public class SearchTest extends TestBase {
 
     @Tag("web")
+    @Tag("all")
     @Test
     @DisplayName("Проверка поиска")
     void bigSearchTest() {

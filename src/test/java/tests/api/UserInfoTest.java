@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class UserInfoTest extends TestBase {
     @Tag("ui")
+    @Tag("all")
     @Test
     @DisplayName("Получить текущего пользователя")
     void checkUserInfoTest() {

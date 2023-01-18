@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class IgnoreUserTest extends TestBase{
     @Tag("ui")
+    @Tag("all")
     @Test
     @DisplayName("Начать игнорировать пользователя")
     void userIgnoreTest() {
@@ -15,6 +16,7 @@ public class IgnoreUserTest extends TestBase{
 
 
     @Tag("ui")
+    @Tag("all")
     @Test
     @DisplayName("Перестать игнорировать пользователя")
     void userRemoveIgnoreTest() {

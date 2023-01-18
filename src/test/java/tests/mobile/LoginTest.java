@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 public class LoginTest extends TestBase {
 
     @Tag("mobile")
+    @Tag("all")
     @Test
     void successLoginTest() {
         loginPage
@@ -14,6 +15,7 @@ public class LoginTest extends TestBase {
     }
 
     @Tag("mobile")
+    @Tag("all")
     @Test
     void invalidPasswordTest() {
         loginPage
@@ -21,6 +23,7 @@ public class LoginTest extends TestBase {
     }
 
     @Tag("mobile")
+    @Tag("all")
     @Test
     void invalidUserTest() {
         loginPage

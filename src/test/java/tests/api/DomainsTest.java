@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class DomainsTest extends TestBase{
     @Tag("ui")
+    @Tag("all")
     @Test
     @DisplayName("Проверка подписанных подлепр")
 
