@@ -17,9 +17,7 @@ def allureVersion = '2.20.0',
     assertJVersion = '3.24.1',
     restAssuredVersion = '5.3.0',
     allureRestVersion = '2.20.0',
-    jacksonCoreVersion = '2.14.1',
-    jacksonDataBindVersion = '2.14.1',
-    jacksonAnnotationsVersion = '2.14.1',
+    jacksonVersion = '2.14.0',
     appiumVersion = '8.2.1',
     commonsIoVersion = '2.11.0'
 
@@ -57,9 +55,7 @@ dependencies {
             "org.assertj:assertj-core:$assertJVersion",
             "io.rest-assured:rest-assured:$restAssuredVersion",
             "io.qameta.allure:allure-rest-assured:$allureRestVersion",
-            "com.fasterxml.jackson.core:jackson-core:$jacksonCoreVersion",
-            "com.fasterxml.jackson.core:jackson-databind:$jacksonDataBindVersion",
-            "com.fasterxml.jackson.core:jackson-annotations:$jacksonAnnotationsVersion",
+            "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion",
             "io.appium:java-client:$appiumVersion",
             "commons-io:commons-io:$commonsIoVersion"
     )

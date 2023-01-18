@@ -15,8 +15,8 @@ import tests.web.pages.SearchPage;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 
-public class TestBase {
-    static String useRemote = System.getProperty("webPlatform", "local");
+public abstract class TestBase {
+    static String useRemote = System.getProperty("webHost", "local");
     LoginPage loginPage = new LoginPage();
     MainPage mainPage = new MainPage();
     SearchPage searchPage = new SearchPage();
@@ -28,7 +28,7 @@ public class TestBase {
     }
 
     @BeforeEach
-    public void addListener() {
+    public void addListenerAndStart() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
             loginPage
                     .openPage("/login")

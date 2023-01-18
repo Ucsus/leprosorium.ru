@@ -1,11 +1,19 @@
 package tests.web;
 
+import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.*;
+import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 public class LoginTest extends TestBase {
+    @BeforeEach
+    @Override
+    public void addListenerAndStart() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+    }
 
     @Tag("web")
     @Test
