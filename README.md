@@ -18,17 +18,19 @@
 
 <a id="stack"></a>
 ## Cтек технологий :hammer_and_wrench:
-| InteliJ IDEA  | Second Header | First Header  | Second Header | First Header  | Second Header | First Header  | Second Header | Second Header |
+<div align="center">
+| InteliJ IDEA  | Java | JUnit 5  | Second Header | First Header  | Second Header | First Header  | Second Header | Second Header |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-|<a href="https://www.jetbrains.com/idea/"><img alt="InteliJ IDEA" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Intelij_IDEA.svg" width="50"/></a>  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+|<a href="https://www.jetbrains.com/idea/"><img alt="InteliJ IDEA" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Intelij_IDEA.svg" width="50"/></a>  |<a href="https://www.java.com/"><img alt="Java" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Java.svg" width="50"/></a>  | <a href="https://junit.org/junit5/"><img alt="JUnit 5" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/JUnit5.svg" width="50"/></a>  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 
 | First Header  | Second Header | First Header  | Second Header | First Header  | Second Header | First Header  | Second Header | Second Header |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-<div align="center">
-<a href="https://www.jetbrains.com/idea/"><img alt="InteliJ IDEA" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Intelij_IDEA.svg" width="50"/></a>
-<a href="https://www.java.com/"><img alt="Java" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Java.svg" width="50"/></a>
-<a href="https://junit.org/junit5/"><img alt="JUnit 5" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/JUnit5.svg" width="50"/></a>
+ 
+ </div>
+
+
+
 <a href="https://selenide.org/"><img alt="Selenide" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Selenide.svg" width="50"/></a>
 <a href="https://aerokube.com/selenoid/"><img alt="Selenoid" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Selenoid.svg" width="50"/></a>
 <a href="https://gradle.org/"><img alt="Gradle" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Gradle.svg" width="50"/></a>
@@ -44,7 +46,6 @@
 <a href="https://appium.io/"><img alt="Appium" height="45" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Appium.svg" width="45"/></a>
 <a href="https://rest-assured.i/"><img alt="REST Assured" height="45" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/RestAssured.svg" width="45"/></a>
 
-</div>
 
 <a id="testcases"></a>
 ## Реализованные проверки :mag:
