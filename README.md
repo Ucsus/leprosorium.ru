@@ -18,10 +18,12 @@
 
 <a id="stack"></a>
 ## Cтек технологий :hammer_and_wrench:
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| First Header  | Second Header | First Header  | Second Header | First Header  | Second Header | First Header  | Second Header | Second Header |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| First Header  | Second Header | First Header  | Second Header | First Header  | Second Header | First Header  | Second Header | Second Header |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 <div align="center">
 <a href="https://www.jetbrains.com/idea/"><img alt="InteliJ IDEA" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Intelij_IDEA.svg" width="50"/></a>
 <a href="https://www.java.com/"><img alt="Java" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Java.svg" width="50"/></a>
@@ -38,8 +40,8 @@
 <a href="https://slack.com"><img alt="Slack" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Slack.svg" width="50"/></a>
 <a href="https://developer.android.com/studio"><img alt="AndroidStudio" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/AndroidStudio.svg" width="50"/></a>
 <a href="https://www.browserstack.com"><img alt="Browserstack" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Browserstack.svg" width="50"/></a>
-<a href="https://appium.io/"><img alt="Appium" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Appium.svg" width="50"/></a>
-<a href="https://rest-assured.i/"><img alt="REST Assured" height="40" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/RestAssured.svg" width="40"/></a>
+<a href="https://appium.io/"><img alt="Appium" height="45" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Appium.svg" width="45"/></a>
+<a href="https://rest-assured.i/"><img alt="REST Assured" height="45" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/RestAssured.svg" width="45"/></a>
 
 </div>
 
