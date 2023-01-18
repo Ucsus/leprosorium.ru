@@ -26,7 +26,7 @@
 <a href="https://aerokube.com/selenoid/"><img alt="Selenoid" height="50" src="/resources/images/logos/Selenoid.svg" width="50"/></a>
 <a href="https://gradle.org/"><img alt="Gradle" height="50" src="/resources/images/logos/Gradle.svg" width="50"/></a>
 <a href="https://www.jenkins.io/"><img alt="Jenkins" height="50" src="/resources/images/logos/Jenkins.svg" width="50"/></a>
-<a href="https://github.com/allure-framework/"><img alt="Allure" height="50" src="/resources/images/logos/Allure.svg" width="50"/></a>
+<a href="https://github.com/allure-framework/"><img alt="Allure" height="50" src="[/resources/images/logos/Allure.svg](https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Allure.svg)" width="50"/></a>
  <a href="https://qameta.io"><img alt="Allure TestOps" height="50" src="/resources/images/logos/AllureTestOps.svg" width="50"/></a>
  <a href="https://www.atlassian.com/software/jira"><img alt="Jira" height="50" src="/resources/images/logos/Jira.svg" width="50"/></a>
 <a href="https://github.com"><img alt="GitHub" height="50" src="/resources/images/logos/GitHub.svg" width="50"/></a>
