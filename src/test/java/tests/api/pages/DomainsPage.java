@@ -28,11 +28,13 @@ public class DomainsPage {
                         .spec(responseSpec)
                         .extract().as(LoginResponse.class);
 
+        String responseSid = response.toString();
+
         Domain domainResponse =
                 given()
                         .spec(request)
                         .header("X-Futuware-UID", config.uid())
-                        .header("X-Futuware-SID", response.getSid())
+                        .header("X-Futuware-SID", responseSid)
                         .when()
                         .get("/users/qaguru/domains/")
                         .then()

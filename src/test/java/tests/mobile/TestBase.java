@@ -48,7 +48,7 @@ public class TestBase {
     public void afterEach() {
         String sessionId = getSessionId();
 
-        Attach.screenshotAs("Last screenshot");
+        Attach.screenshotAs("Скриншот");
         Attach.pageSource();
 
         closeWebDriver();
