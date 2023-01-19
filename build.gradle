@@ -96,6 +96,6 @@ task webTests(type: Test) {
 task allTests(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
-        includeTags 'ALL'
+        includeTags 'all'
     }
 }

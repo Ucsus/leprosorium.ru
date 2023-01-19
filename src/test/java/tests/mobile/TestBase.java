@@ -20,7 +20,7 @@ import static helpers.Attach.getSessionId;
 
 public class TestBase {
 
-    static String driver = System.getProperty("mobileHost", "browserstack");
+    static String driver = System.getProperty("mobileHost", "emulation");
     LoginPage loginPage = new LoginPage();
     SearchPage searchPage = new SearchPage();
     FavPage favPage = new FavPage();
