@@ -197,6 +197,9 @@ allure serve build/allure-results
 <a id="jenkins"></a>
 ## <a href="https://jenkins.autotests.cloud/job/Lepra//">Сборка в Jenkins</a> <img alt="Jenkins" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jenkins.svg"/></img></br>
 <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/jenkinsmain.jpg"></br>
+
+<a id="allure"></a>
+## Allure отчёт <img alt="Allure" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Allure.svg"/></img></br>
 ### Обзор:
 <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/jenkins1.jpg"></br>
 ### Тесты:
@@ -204,21 +207,14 @@ allure serve build/allure-results
 ### Графики:
 <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/jenkins3.jpg"></br>
 
-<a id="allure"></a>
-## Allure отчёт <img alt="Allure" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Allure.svg"/></img></br>
-### <a href="https://jenkins.autotests.cloud/job/iiii-tech.com/6/allure/">Обзор</a>
-<img src="/images/screens/alluremain.jpg"></br>
-### <a href="https://jenkins.autotests.cloud/job/iiii-tech.com/6/allure/#packages">Тесты</a>
-<img src="/images/screens/allurepackages.jpg"></br>
-### <a href="https://jenkins.autotests.cloud/job/iiii-tech.com/6/allure/#graph">Графики</a>
-<img src="/images/screens/alluregraphs.jpg"></br>
-
 <a id="alluretestops"></a>
 ## Allure TestOps <img alt="Allure TestOps" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/AllureTestOps.svg"/></img></br>
 ### Обзор
-<img src="/images/screens/alluretestopslaunches.jpg"></br>
+<img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/aot1.jpg"></br>
 ### Тесты
-<img src="/images/screens/alluretestopstests.jpg"></br>
+<img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/aot1.jpg"></br>
+### Запуск
+<img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/aot1.jpg"></br>
 
 <a id="jira"></a>
 ## Интеграция с Jira <img alt="jira" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jira.svg"/></img></br>
