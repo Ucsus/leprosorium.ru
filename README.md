@@ -4,6 +4,7 @@
 >своеобразными правилами и своеобразным цинично-глумливым юмором, отсоединившийся от <a href="https://d3.ru/">dirty.ru.</a>\
 >Состоит из сайта, а также приложений для iOS (официальное) и Android (неофициальное).
 
+<a id="tableofcontents"></a>
 ## Содержание :bookmark_tabs:
 ➠ <a href="#stack">Cтек технологий</a></br>
 ➠ <a href="#testcases">Реализованные проверки</a></br>
@@ -14,8 +15,9 @@
 ➠ <a href="#jira">Интеграция с Jira</a></br>
 ➠ <a href="#telegram">Отчет в Telegram</a></br>
 ➠ <a href="#slack">Отчет в Slack</a></br>
-➠ <a href="#video">Видео прохождения теста</a>
-➠ <a href="#video">BrowserStack</a>
+➠ <a href="#video">Видео прохождения теста</a></br>
+➠ <a href="#appium">Appium</a></br>
+➠ <a href="#browserstack">BrowserStack</a>
 
 <a id="stack"></a>
 ## Cтек технологий :hammer_and_wrench:
@@ -152,6 +154,7 @@
 <p align="center">
 <img title="Web" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/mobiletestcase.jpg">
 </p>
+<p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
 <a id="console"></a>
 ## Запуск из терминала :desktop_computer:
@@ -194,6 +197,7 @@ A --> F[all]
 allure serve build/allure-results
 
 ```
+<p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
 <a id="jenkins"></a>
 ## <a href="https://jenkins.autotests.cloud/job/Lepra//">Сборка в Jenkins</a> <img alt="Jenkins" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jenkins.svg"/></img></br>
@@ -207,6 +211,7 @@ allure serve build/allure-results
 <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/jenkins2.jpg"></br>
 ### Графики:
 <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/jenkins3.jpg"></br>
+<p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
 <a id="alluretestops"></a>
 ## Allure TestOps <img alt="Allure TestOps" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/AllureTestOps.svg"/></img></br>
@@ -216,23 +221,32 @@ allure serve build/allure-results
 <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/ato2.jpg"></br>
 ### Запуск
 <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/ato3.jpg"></br>
+<p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
 <a id="jira"></a>
 ## Интеграция с Jira <img alt="jira" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jira.svg"/></img></br>
 <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/jira.jpg"></br>
+<p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
 <a id="telegram"></a>
 ## Отчет в Telegram <img alt="Telegram" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Telegram.svg"/></img></br>
 <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/telegram.jpg"></br>
+<p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
 <a id="slack"></a>
 ## Отчет в Slack <img alt="slack" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Slack.svg"/></img></br>
 <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/slack.jpg"></br>
+<p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
 <a id="video"></a>
 ## Видео прохождения теста :clapper:
 https://user-images.githubusercontent.com/7962244/213429054-df407870-c8c7-4451-9cb7-e88d79d3cb15.mp4
+<p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
+<a id="appium"></a>
+### Appium Server + Appium Inspector + Android Studio Virtual Device<img alt="Appium" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Appium.svg"/></img></br>
+<img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/appium.jpg"></br>
+<p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
 <a id="browserstack"></a>
 ### BrowserStack<img alt="Browserstack" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Browserstack.svg"/></img></br>
@@ -240,7 +254,7 @@ https://user-images.githubusercontent.com/7962244/213429054-df407870-c8c7-4451-9
 <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/browserstack1.jpg"></br>
 ## Видео прохождения мобильного теста в BrowserStack:clapper:
 https://user-images.githubusercontent.com/7962244/213428972-84b7d80e-0323-419f-8b5e-fe072c61ad68.mp4
-
+<p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
 
 
