@@ -47,7 +47,5 @@ public abstract class TestBase {
             Attach.addVideo();
         }
         closeWebDriver();
-        loginPage
-                .logout();
     }
 }

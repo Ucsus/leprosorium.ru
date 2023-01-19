@@ -29,5 +29,7 @@ public class FraudTest extends TestBase {
                 .setApartment(apartment)
                 .setCommentForOrder(commentForOrder)
                 .closeForm();
+        loginPage
+                .logout();
     }
 }

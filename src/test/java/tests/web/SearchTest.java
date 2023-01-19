@@ -16,6 +16,8 @@ public class SearchTest extends TestBase {
                 .searchQuery("Масляная рыба")
                 .sortByRating()
                 .topicStarterCheck("Flynn");
+        loginPage
+                .logout();
 
     }
 }
