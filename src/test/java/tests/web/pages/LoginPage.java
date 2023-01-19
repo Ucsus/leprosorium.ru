@@ -5,6 +5,7 @@ import com.codeborne.selenide.SelenideElement;
 import drivers.web.BrowserWebDriver;
 import io.qameta.allure.Step;
 
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class LoginPage {
@@ -17,8 +18,8 @@ public class LoginPage {
             user = $("#js-auth_username"),
             pass = $("#js-auth_password"),
             yarrr = $("#js-auth_form_submit"),
-            rememberMe = $("js-auth_forever"),
-            rememberIp = $("js-auth_remember_ip"),
+            rememberMe = $(byText("Запомните меня!")),
+            rememberIp = $(byText("Запомните мой ip-адрес!")),
             logout = $("#js-header_logout_link");
 
     @Step("Открываем страницу авторизации: {pageUrl}")
