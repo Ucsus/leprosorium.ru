@@ -10,6 +10,7 @@
 ➠ <a href="#testcases">Реализованные проверки</a></br>
 ➠ <a href="#jenkins">Сборка в Jenkins</a></br>
 ➠ <a href="#console">Запуск из терминала</a></br>
+➠ <a href="#properties">Файлы свойств</a></br>
 ➠ <a href="#allure">Allure отчет</a></br>
 ➠ <a href="#alluretestops">Allure TestOps</a></br>
 ➠ <a href="#jira">Интеграция с Jira</a></br>
@@ -211,6 +212,47 @@ A --> F[all]
 allure serve build/allure-results
 
 ```
+<p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
+
+<a id=#properties></a>
+## Файлы свойств :bookmark_tabs:
+Возможные свойства в .properties файле:
+```properties
+baseUrl= / базовый URL для веб-тестов
+browser=
+browserVersion=
+browserSize=
+remoteUrl=
+selenoidLogin=
+selenoidPassword=
+platformName=
+platformVersion=
+deviceName=
+appPackage=
+appActivity=
+user=scroot_TYMbLK
+key=PfCSFNvYpx7f1zQfUZah
+app=bs://1644f5adeac51e22714db6559d7c1a3027a5be7b
+device=Google Pixel 3
+osVersion=9.0
+project=QA Guru Diploma
+build=browserstack-build
+name=LeprosoriumTest
+url=http://hub.browserstack.com/wd/hub
+baseUrl=https://leprosorium.ru
+uid=92788
+username=qaguru
+password=h%xX6v$dmA0rW2IJuDL1Q
+```
+
+>- *baseUrl* - базовый URL для веб-тестов
+>- *browser* - браузер для веб-тестов
+>- *browserSize* - версия браузера для веб-тестов
+>- *browserSize* - размер браузера для веб-тестов
+>- *user* - логин для авторизации в BrowserStack
+>- *key* - ключ для авторизации в BrowserStack
+>- *deviceName* - имя или серийный номер устройства Android
+>- *platformVersion* - версия Android
 <p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
 <a id="jenkins"></a>
