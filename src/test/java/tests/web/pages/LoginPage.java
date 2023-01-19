@@ -46,10 +46,10 @@ public class LoginPage {
         user.sendKeys(username);
         sleep(500);
         pass.sendKeys(password);
-        sleep(500);
-        rememberMe.click();
-        sleep(500);
-        rememberIp.click();
+//        sleep(500);
+//        rememberMe.click();
+//        sleep(500);
+//        rememberIp.click();
         yarrr.click();
         return this;
     }
