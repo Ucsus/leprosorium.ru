@@ -136,6 +136,19 @@
     </td>
   </tr>
 </table>
+В этом проекте автотесты написаны на <code>Java</code> с использованием <code>Selenide</code> для UI тестов.
+>
+> <code>Selenoid</code> запускает браузеры в <code>Docker</code> контейнере.
+>
+> <code>Gradle</code> используется для автоматизированной сборки проекта.
+>
+> <code>JUnit 5</code> используется как библиотека модульного тестирования.
+>
+> <code>Jenkins</code> проводит тесты.
+>
+> <code>Allure Report</code> формирует отчет о выполнении теста.
+>
+> После завершения прогона уведомления отправляются с помощью бота в <code>Telegram</code> и <code>Slack</code>.
 
 
 <a id="testcases"></a>
