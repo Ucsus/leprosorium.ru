@@ -53,4 +53,9 @@ public class LoginPage {
         logout.shouldHave(Condition.text("logout"));
         return this;
     }
+    @Step("Выход из профиля")
+    public LoginPage logout() {
+        logout.click();
+        return this;
+    }
 }

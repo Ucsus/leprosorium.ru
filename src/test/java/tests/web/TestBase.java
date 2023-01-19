@@ -36,6 +36,7 @@ public abstract class TestBase {
                 .loginFormCheck()
                 .authorizationFormFill();
     }
+
     @AfterEach
     public void addAttachments() {
         Attach.screenshotAs("Скриншот");
@@ -46,5 +47,7 @@ public abstract class TestBase {
             Attach.addVideo();
         }
         closeWebDriver();
+        loginPage
+                .logout();
     }
 }
