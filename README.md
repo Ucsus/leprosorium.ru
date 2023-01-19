@@ -144,7 +144,7 @@
 ✓ Проверка шэринга материалов
 
 <a id="jenkins"></a>
-## <a href="https://jenkins.autotests.cloud/job/iiii-tech.com/">Сборка в Jenkins</a> <img alt="Jenkins" height="32" src="/images/logos/Jenkins.svg"/></img></br>
+## <a href="https://jenkins.autotests.cloud/job/iiii-tech.com/">Сборка в Jenkins</a> <img alt="Jenkins" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jenkins.svg"/></img></br>
 <img src="/images/screens/jenkins.jpg"></br>
 ### Параметры сборки в Jenkins:
 - Browser (браузер, по умолчанию chrome)
