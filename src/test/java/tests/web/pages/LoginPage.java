@@ -5,8 +5,7 @@ import com.codeborne.selenide.SelenideElement;
 import drivers.web.BrowserWebDriver;
 import io.qameta.allure.Step;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 public class LoginPage {
     String username = BrowserWebDriver.config.username();
@@ -17,6 +16,7 @@ public class LoginPage {
             loginForm = $("#js-auth_form"),
             user = $("#js-auth_username"),
             pass = $("#js-auth_password"),
+            yarrr = $("#js-auth_form_submit"),
             logout = $("#js-header_logout_link");
 
     @Step("Открываем страницу авторизации: {pageUrl}")
@@ -34,13 +34,17 @@ public class LoginPage {
     @Step("Проверяем видимость формы авторизации")
     public LoginPage loginFormCheck() {
         loginForm.shouldHave(Condition.visible);
+        sleep(1000);
         return this;
     }
 
     @Step("Авторизация")
     public LoginPage authorizationFormFill() {
-        user.setValue(username);
-        pass.setValue(password).pressEnter();
+        user.sendKeys(username);
+        sleep(1000);
+        pass.sendKeys(password);
+        sleep(1000);
+        yarrr.click();
         return this;
     }
 
