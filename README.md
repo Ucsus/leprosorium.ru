@@ -46,7 +46,7 @@
       <a href="https://selenide.org/">
         <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Selenide.svg" width="48" height="48" alt="Selenide" />
       </a>
-      <br>JSelenide
+      <br>Selenide
     </td>
     <td align="center" width="96">
       <a href="https://aerokube.com/selenoid/">
