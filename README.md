@@ -210,11 +210,11 @@ allure serve build/allure-results
 <a id="alluretestops"></a>
 ## Allure TestOps <img alt="Allure TestOps" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/AllureTestOps.svg"/></img></br>
 ### Обзор
-<img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/aot1.jpg"></br>
+<img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/ato1.jpg"></br>
 ### Тесты
-<img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/aot1.jpg"></br>
+<img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/ato2.jpg"></br>
 ### Запуск
-<img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/aot1.jpg"></br>
+<img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/ato3.jpg"></br>
 
 <a id="jira"></a>
 ## Интеграция с Jira <img alt="jira" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jira.svg"/></img></br>
