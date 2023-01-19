@@ -14,14 +14,6 @@ import java.net.URL;
 public class BrowserStackMobileDriver implements WebDriverProvider {
     static BrowserstackConfig config = ConfigFactory.create(BrowserstackConfig.class);
 
-    public static URL getBrowserStackUrl() {
-        try {
-            return new URL("http://hub.browserstack.com/wd/hub");
-        } catch (MalformedURLException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
     @Override
     public WebDriver createDriver(Capabilities capabilities) {
         MutableCapabilities mutableCapabilities = new MutableCapabilities();
@@ -38,6 +30,14 @@ public class BrowserStackMobileDriver implements WebDriverProvider {
         mutableCapabilities.setCapability("unicodeKeyboard", true);
         mutableCapabilities.setCapability("resetKeyboard", true);
 
-        return new RemoteWebDriver(getBrowserStackUrl(), mutableCapabilities);
+        return new RemoteWebDriver(getBrowserstackUrl(), mutableCapabilities);
+    }
+
+    public static URL getBrowserstackUrl() {
+        try {
+            return new URL(config.url());
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

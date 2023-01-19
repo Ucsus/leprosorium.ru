@@ -13,4 +13,5 @@ public interface BrowserstackConfig extends Config {
     String project();
     String build();
     String name();
+    String url();
 }
