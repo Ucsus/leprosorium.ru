@@ -143,15 +143,6 @@
 ✓ Проверка ссылок соцсетей в подвале</br>
 ✓ Проверка шэринга материалов
 
-<a id="jenkins"></a>
-## <a href="https://jenkins.autotests.cloud/job/iiii-tech.com/">Сборка в Jenkins</a> <img alt="Jenkins" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jenkins.svg"/></img></br>
-<img src="/images/screens/jenkins.jpg"></br>
-### Параметры сборки в Jenkins:
-- Browser (браузер, по умолчанию chrome)
-- Browser_version (версия браузера, по умолчанию 100)
-- Browser_size (размер окна браузера, по умолчанию 1920x1080)
-- REMOTE_URL (логин, пароль и адрес удаленного сервера selenoid)
-
 <a id="console"></a>
 ## Запуск из терминала :desktop_computer:
 ### Локальный запуск:
@@ -191,13 +182,12 @@ A --> F[all]
 ### Отчет:
 ```bash
 allure serve build/allure-results
+
 ```
 
-### Параметры сборки
-> <code>BROWSER</code> – браузер (_по умолчанию - chrome_)</br>
-> <code>BROWSER_SIZE</code> – разрешение браузера (_по умолчанию - 1920x1080_)</br>
-> <code>BROWSER_VERSION</code> – версия браузера (_по умолчанию - 100_)</br>
-> <code>remote</code> – логин, пароль и адрес Selenoid (_указаны в Jenkins_)
+<a id="jenkins"></a>
+## <a href="https://jenkins.autotests.cloud/job/Lepra//">Сборка в Jenkins</a> <img alt="Jenkins" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jenkins.svg"/></img></br>
+<img src="/images/screens/jenkins.jpg"></br>
 
 <a id="allure"></a>
 ## Allure отчёт <img alt="Allure" height="32" src="/images/logos/Allure.svg"/></img></br>
