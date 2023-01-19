@@ -218,33 +218,33 @@ allure serve build/allure-results
 ## Файлы свойств :bookmark_tabs:
 Возможные свойства в .properties файле:
 ```properties
->- *baseUrl* - базовый URL для веб-тестов
->- *browser* - браузер для веб-тестов
->- *browserSize* - версия браузера для веб-тестов
->- *browserSize* - размер браузера для веб-тестов
->- *remoteUrl* - URL удалённого сервера (Selenoid)
->- *selenoidLogin* - логин удалённого сервера (Selenoid)
->- *selenoidPassword* - пароль удалённого сервера (Selenoid)
->
->- *platformName* - ОС мобильного устройства
->- *platformVersion* - версия ОС
->- *deviceName* - имя или серийный номер устройства
->- *appPackage* - имя Java пакета Android приложения
->- *appActivity* - имя activities приложения
->
->- *user* - логин для авторизации в BrowserStack
->- *key* - ключ для авторизации в BrowserStack
->- *app* - ключ вызова приложения в BrowserStack
->- *device* - имя устройства в BrowserStack
->- *osVersion* - версия ОС в BrowserStack
->- *project* - название проекта
->- *build* - название билда
->- *name* - имя тестов
->- *url* - URL удалённого сервера (BrowserStack) 
->
->- *uid* - ID пользователя сайта
->- *username* - логин пользователя сайта
->- *password* - пароль пользователя сайта
+baseUrl= базовый URL для веб-тестов
+browser= браузер для веб-тестов
+browserSize=  версия браузера для веб-тестов
+browserSize=  размер браузера для веб-тестов
+remoteUrl=  URL удалённого сервера (Selenoid)
+selenoidLogin=  логин удалённого сервера (Selenoid)
+selenoidPassword=  пароль удалённого сервера (Selenoid)
+
+platformName=  ОС мобильного устройства
+platformVersion=  версия ОС
+deviceName=  имя или серийный номер устройства
+appPackage=  имя Java пакета Android приложения
+appActivity=  имя activities приложения
+
+user=  логин для авторизации в BrowserStack
+key=  ключ для авторизации в BrowserStack
+app=  ключ вызова приложения в BrowserStack
+device=  имя устройства в BrowserStack
+osVersion=  версия ОС в BrowserStack
+project=  название проекта
+build=  название билда
+name=  имя тестов
+url=  URL удалённого сервера (BrowserStack) 
+
+uid=  ID пользователя сайта
+username=  логин пользователя сайта
+password=  пароль пользователя сайта
 ```
 <p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
