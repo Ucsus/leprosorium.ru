@@ -138,8 +138,18 @@
 <a id="testcases"></a>
 ## Реализованные проверки :mag:
 ### Web:
+<p align="center">
+<img title="Web" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/webtestcase.jpg">
+</p>
 ### Api:
+
+<p align="center">
+<img title="Web" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/apitestcase.jpg">
+</p>
 ### Mobile:
+<p align="center">
+<img title="Web" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/mobiletestcase.jpg">
+</p>
 
 <a id="console"></a>
 ## Запуск из терминала :desktop_computer:
