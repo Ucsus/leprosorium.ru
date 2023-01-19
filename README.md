@@ -214,10 +214,10 @@ allure serve build/allure-results
 ```
 <p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
-<a id=#properties></a>
+<a id=properties></a>
 ## Файлы свойств :bookmark_tabs:
 Возможные свойства в .properties файле:
-
+```properties
 >- *baseUrl* - базовый URL для веб-тестов
 >- *browser* - браузер для веб-тестов
 >- *browserSize* - версия браузера для веб-тестов
@@ -245,6 +245,7 @@ allure serve build/allure-results
 >- *uid* - ID пользователя сайта
 >- *username* - логин пользователя сайта
 >- *password* - пароль пользователя сайта
+```
 <p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
 <a id="jenkins"></a>
