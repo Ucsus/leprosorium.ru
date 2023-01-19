@@ -70,13 +70,19 @@
       <br>REST Assured
     </td>
     <td align="center" width="96">
+      <a href="https://www.selenium.dev/">
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Selenium.svg" width="48" height="48" alt="Selenium" />
+      </a>
+      <br>Selenium
+    </td>
+  </tr>
+  <tr>
+      <td align="center" width="96">
       <a href="https://github.com">
         <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/GitHub.svg" width="48" height="48" alt="GitHub" />
       </a>
       <br>GitHub
     </td>
-  </tr>
-  <tr>
     <td align="center" width="96"> 
       <a href="https://developer.android.com/studio" >
         <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/AndroidStudio.svg" width="48" height="48" alt="AndroidStudio" />
@@ -124,12 +130,6 @@
         <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Slack.svg" width="48" height="48" alt="Slack" />
       </a>
       <br>Slack
-    </td>
-    <td align="center" width="96">
-      <a href="h" >
-        <img src="" width="48" height="48" alt="" />
-      </a>
-      <br>
     </td>
   </tr>
 </table>
