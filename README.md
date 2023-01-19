@@ -155,7 +155,7 @@
 <img title="Web" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/mobiletestcase.jpg">
 </p>
 
-<a href="#tableofcontents" align="right">Вернуться к содержанию ⬆</a>
+<p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
 <a id="console"></a>
 ## Запуск из терминала :desktop_computer:
