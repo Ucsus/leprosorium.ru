@@ -136,6 +136,7 @@
     </td>
   </tr>
 </table>
+
 В этом проекте автотесты написаны на <code>Java</code> с использованием <code>Selenide</code> для UI тестов.
 >
 > <code>Selenoid</code> запускает браузеры в <code>Docker</code> контейнере.
