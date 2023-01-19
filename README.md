@@ -1,20 +1,20 @@
 # Проект автоматизации тестирования сайта [Лепрозорий](https://leprosorium.ru)
 <a href="https://leprosorium.ru" target="_blank"><img src="https://i.postimg.cc/JnKd1x7h/header-1.jpg?raw=true"></a>
 >Суверенный Лепрозорий — закрытый коллективный блог, со своей мифологией,\
->своеобразными правилами и своеобразным цинично-глумливым юмором, отсоединившийся от dirty.ru.\
+>своеобразными правилами и своеобразным цинично-глумливым юмором, отсоединившийся от <a href="https://d3.ru/">dirty.ru.</a>\
 >Состоит из сайта, а также приложений для iOS (официальное) и Android (неофициальное).
 
 ## Содержание :bookmark_tabs:
-🔴 <a href="#stack">Cтек технологий</a></br>
-🔴 <a href="#testcases">Реализованные проверки</a></br>
-🔴 <a href="#jenkins">Сборка в Jenkins</a></br>
-🔴 <a href="#console">Запуск из терминала</a></br>
-🔴 <a href="#allure">Allure отчет</a></br>
-🔴 <a href="#alluretestops">Allure TestOps</a></br>
-🔴 <a href="#jira">Интеграция с Jira</a></br>
-🔴 <a href="#telegram">Отчет в Telegram</a></br>
-🔴 <a href="#slack">Отчет в Slack</a></br>
-🔴 <a href="#video">Видео прохождения тестов</a>
+➠ <a href="#stack">Cтек технологий</a></br>
+➠ <a href="#testcases">Реализованные проверки</a></br>
+➠ <a href="#jenkins">Сборка в Jenkins</a></br>
+➠ <a href="#console">Запуск из терминала</a></br>
+➠ <a href="#allure">Allure отчет</a></br>
+➠ <a href="#alluretestops">Allure TestOps</a></br>
+➠ <a href="#jira">Интеграция с Jira</a></br>
+➠ <a href="#telegram">Отчет в Telegram</a></br>
+➠ <a href="#slack">Отчет в Slack</a></br>
+➠ <a href="#video">Видео прохождения тестов</a>
 
 <a id="stack"></a>
 ## Cтек технологий :hammer_and_wrench:
@@ -143,40 +143,51 @@
 ✓ Проверка ссылок соцсетей в подвале</br>
 ✓ Проверка шэринга материалов
 
-<a id="jenkins"></a>
-## <a href="https://jenkins.autotests.cloud/job/iiii-tech.com/">Сборка в Jenkins</a> <img alt="Jenkins" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jenkins.svg"/></img></br>
-<img src="/images/screens/jenkins.jpg"></br>
-### Параметры сборки в Jenkins:
-- Browser (браузер, по умолчанию chrome)
-- Browser_version (версия браузера, по умолчанию 100)
-- Browser_size (размер окна браузера, по умолчанию 1920x1080)
-- REMOTE_URL (логин, пароль и адрес удаленного сервера selenoid)
-
 <a id="console"></a>
 ## Запуск из терминала :desktop_computer:
 ### Локальный запуск:
+> В каталоге resources/configuration находятся конфиги с параметрами для запуска тестов.<br>
+> Необходимо заполнить следующие файлы: <br>
+> src/test/resources/config/web/local.properties <br>
+> src/test/resources/config/mobile/emulation.properties <br>
+> src/test/resources/config/mobile/emulation.properties <br>
+> (примеры включены в этот проект github). <br>
+> Как только это будет сделано, вы можете запустить следующие команды:
 ```
-gradle clean test -Dcontrol=local
+gradle clean webTests
+gradle clean mobileTests -DmobileDeviceHost=emulation
 ```
 
-### Удаленный запуск:
+### Удалённый запуск:
+> В каталоге resources/configuration находятся конфиги с параметрами для запуска тестов.<br>
+> Необходимо заполнить следующие файлы: <br>
+> src/test/resources/config/web/remote.properties <br>
+> src/test/resources/config/mobile/browserstack.properties <br>
+> src/test/resources/config/api/api.properties <br>
+> (примеры включены в этот проект github).<br>
+> Как только это будет сделано, вы можете запустить следующие команды:
 ```
-gradle clean test -Dcontrol=remote
--Dbrowser=${BROWSER}
--DbrowserSize=${BROWSER_SIZE}
--DbrowserVersion=${BROWSER_VERSION}
+gradle clean 
+${TYPE}Tests
+```
+
+```mermaid
+graph LR
+A[TYPE] --> B[web]
+A --> D[api]
+A --> E[mobile]
+A --> F[all]
 ```
 
 ### Отчет:
 ```bash
 allure serve build/allure-results
+
 ```
 
-### Параметры сборки
-> <code>BROWSER</code> – браузер (_по умолчанию - chrome_)</br>
-> <code>BROWSER_SIZE</code> – разрешение браузера (_по умолчанию - 1920x1080_)</br>
-> <code>BROWSER_VERSION</code> – версия браузера (_по умолчанию - 100_)</br>
-> <code>remote</code> – логин, пароль и адрес Selenoid (_указаны в Jenkins_)
+<a id="jenkins"></a>
+## <a href="https://jenkins.autotests.cloud/job/Lepra//">Сборка в Jenkins</a> <img alt="Jenkins" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jenkins.svg"/></img></br>
+<img src="/images/screens/jenkins.jpg"></br>
 
 <a id="allure"></a>
 ## Allure отчёт <img alt="Allure" height="32" src="/images/logos/Allure.svg"/></img></br>
