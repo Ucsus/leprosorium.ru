@@ -15,6 +15,7 @@
 ➠ <a href="#telegram">Отчет в Telegram</a></br>
 ➠ <a href="#slack">Отчет в Slack</a></br>
 ➠ <a href="#video">Видео прохождения теста</a>
+➠ <a href="#video">Appium</a>
 ➠ <a href="#video">BrowserStack</a>
 
 <a id="stack"></a>
@@ -233,6 +234,9 @@ allure serve build/allure-results
 ## Видео прохождения теста :clapper:
 https://user-images.githubusercontent.com/7962244/213429054-df407870-c8c7-4451-9cb7-e88d79d3cb15.mp4
 
+<a id="appium"></a>
+### Appium Server + Appium Inspector + Android Studio Virtual Device<img alt="Appium" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Appium.svg"/></img></br>
+<img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/appium.jpg"></br>
 
 <a id="browserstack"></a>
 ### BrowserStack<img alt="Browserstack" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Browserstack.svg"/></img></br>
@@ -240,7 +244,6 @@ https://user-images.githubusercontent.com/7962244/213429054-df407870-c8c7-4451-9
 <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/browserstack1.jpg"></br>
 ## Видео прохождения мобильного теста в BrowserStack:clapper:
 https://user-images.githubusercontent.com/7962244/213428972-84b7d80e-0323-419f-8b5e-fe072c61ad68.mp4
-
 
 
 
