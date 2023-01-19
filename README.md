@@ -4,6 +4,7 @@
 >своеобразными правилами и своеобразным цинично-глумливым юмором, отсоединившийся от <a href="https://d3.ru/">dirty.ru.</a>\
 >Состоит из сайта, а также приложений для iOS (официальное) и Android (неофициальное).
 
+<a id="tableofcontents"></a>
 ## Содержание :bookmark_tabs:
 ➠ <a href="#stack">Cтек технологий</a></br>
 ➠ <a href="#testcases">Реализованные проверки</a></br>
@@ -153,6 +154,8 @@
 <p align="center">
 <img title="Web" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/mobiletestcase.jpg">
 </p>
+
+<a href="tableofcontents">[Вернуться к содержанию ⬆]</a>
 
 <a id="console"></a>
 ## Запуск из терминала :desktop_computer:
