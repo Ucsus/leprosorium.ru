@@ -155,16 +155,37 @@
 <a id="console"></a>
 ## Запуск из терминала :desktop_computer:
 ### Локальный запуск:
+> В каталоге resources/configuration находятся конфиги с параметрами для запуска тестов.<br>
+> Необходимо заполнить следующие файлы: <br>
+> src/test/resources/config/web/local.properties <br>
+> src/test/resources/config/mobile/emulation.properties <br>
+> src/test/resources/config/mobile/emulation.properties <br>
+> (примеры включены в этот проект github). <br>
+> Как только это будет сделано, вы можете запустить следующие команды:
 ```
-gradle clean test -Dcontrol=local
+gradle clean webTests
+gradle clean mobileTests -DmobileDeviceHost=emulation
 ```
 
-### Удаленный запуск:
+### Удалённый запуск:
+> В каталоге resources/configuration находятся конфиги с параметрами для запуска тестов.<br>
+> Необходимо заполнить следующие файлы: <br>
+> src/test/resources/config/web/remote.properties <br>
+> src/test/resources/config/mobile/browserstack.properties <br>
+> src/test/resources/config/api/api.properties <br>
+> (примеры включены в этот проект github).<br>
+> Как только это будет сделано, вы можете запустить следующие команды:
 ```
-gradle clean test -Dcontrol=remote
--Dbrowser=${BROWSER}
--DbrowserSize=${BROWSER_SIZE}
--DbrowserVersion=${BROWSER_VERSION}
+gradle clean 
+${TYPE}Tests
+```
+
+```mermaid
+graph LR
+A[TYPE] --> B[web]
+A --> D[api]
+A --> E[mobile]
+A --> F[all]
 ```
 
 ### Отчет:
