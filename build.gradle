@@ -10,7 +10,7 @@ repositories {
 
 def allureVersion = '2.20.0',
     slf4jVersion = '2.0.5',
-    selenideVersion = '6.11.0',
+    selenideVersion = '6.9.0',
     jUnitVersion = '5.9.2',
     ownerVersion = '1.0.12',
     fakerVersion = '1.0.2',
