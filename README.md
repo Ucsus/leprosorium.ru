@@ -19,13 +19,121 @@
 <a id="stack"></a>
 ## Cтек технологий :hammer_and_wrench:
 
-| InteliJ IDEA  | Java | JUnit 5  | Selenide | Selenoid  | Gradle | Jenkins  | REST</br>Assured | GitHub |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| &nbsp;<a href="https://www.jetbrains.com/idea/"><img alt="InteliJ IDEA" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Intelij_IDEA.svg" width="50"/></a>  |<a href="https://www.java.com/"><img alt="Java" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Java.svg" width="50"/></a>  | <a href="https://junit.org/junit5/"><img alt="JUnit 5" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/JUnit5.svg" width="50"/></a>  |<a href="https://selenide.org/"><img alt="Selenide" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Selenide.svg" width="50"/></a>  | <a href="https://aerokube.com/selenoid/"><img alt="Selenoid" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Selenoid.svg" width="50"/></a>  | <a href="https://gradle.org/"><img alt="Gradle" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Gradle.svg" width="50"/></a>  | <a href="https://www.jenkins.io/"><img alt="Jenkins" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jenkins.svg" width="50"/></a>  | &nbsp; <a href="https://rest-assured.i/"><img alt="REST Assured" height="45" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/RestAssured.svg" width="45"/></a>  | <a href="https://github.com"><img alt="GitHub" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/GitHub.svg" width="50"/></a>  |
+<table>
+  <tr>
+    <td align="center" width="96">
+      <a href="https://www.jetbrains.com/idea/">
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Intelij_IDEA.svg" width="48" height="48" alt="InteliJ IDEA" />
+      </a>
+      <br>InteliJ IDEA
+    </td>
+    <td align="center" width="96">
+      <a href="[#macropower-tech](https://www.java.com/)">
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Java.svg" width="48" height="48" alt="Java" />
+      </a>
+      <br>Java
+    </td>
+    <td align="center" width="96">
+      <a href="https://junit.org/junit5/">
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/JUnit5.svg" width="48" height="48" alt="JUnit 5" />
+      </a>
+      <br>JUnit 5
+    </td>
+    <td align="center" width="96">
+      <a href="https://selenide.org/">
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Selenide.svg" width="48" height="48" alt="Selenide" />
+      </a>
+      <br>JSelenide
+    </td>
+    <td align="center" width="96">
+      <a href="https://aerokube.com/selenoid/">
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Selenoid.svg" width="48" height="48" alt="Selenoid" />
+      </a>
+      <br>Selenoid
+    </td>
+    <td align="center" width="96">
+      <a href="https://gradle.org/">
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Gradle.svg" width="48" height="48" alt="Gradle" />
+      </a>
+      <br>Gradle
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.jenkins.io/" >
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jenkins.svg" width="48" height="48" alt="Jenkins" />
+      </a>
+      <br>Jenkins
+    </td>
+    <td align="center" width="96">
+      <a href="https://rest-assured.io/">
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/RestAssured.svg" width="48" height="48" alt="REST Assured" />
+      </a>
+      <br>REST Assured
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.selenium.dev/">
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Selenium.svg" width="48" height="48" alt="Selenium" />
+      </a>
+      <br>Selenium
+    </td>
+  </tr>
+  <tr>
+      <td align="center" width="96">
+      <a href="https://github.com">
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/GitHub.svg" width="48" height="48" alt="GitHub" />
+      </a>
+      <br>GitHub
+    </td>
+    <td align="center" width="96"> 
+      <a href="https://developer.android.com/studio" >
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/AndroidStudio.svg" width="48" height="48" alt="AndroidStudio" />
+      </a>
+      <br>AndroidStudio
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.browserstack.com" >
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Browserstack.svg" width="48" height="48" alt="Browserstack" />
+      </a>
+      <br>Browserstack
+    </td>
+    <td align="center"  width="96">
+      <a href="https://appium.io/">
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Appium.svg" width="48" height="48" alt="Appium" />
+      </a>
+      <br>Appium
+    </td>
+    <td align="center"  width="96">
+      <a href="https://github.com/allure-framework/">
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Allure.svg" width="48" height="48" alt="Allure" />
+      </a>
+      <br>Allure
+    </td>
+    <td align="center" width="96">
+      <a href="https://qameta.io">
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/AllureTestOps.svg" width="48" height="48" alt="Allure TestOps" />
+      </a>
+      <br>Allure TestOps
+    </td>
+    <td align="center"  width="96">
+      <a href="https://www.atlassian.com/software/jira">
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jira.svg" width="48" height="48" alt="Jira" />
+      </a>
+      <br>Jira
+    </td>
+    <td align="center" width="96">
+      <a href="https://telegram.org/" >
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Telegram.svg" width="48" height="48" alt="Telegram" />
+      </a>
+      <br>Telegram
+    </td>
+    <td align="center" width="96">
+      <a href="https://slack.com" >
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Slack.svg" width="48" height="48" alt="Slack" />
+      </a>
+      <br>Slack
+    </td>
+  </tr>
+</table>
 
-| Android</br>Studio  | Browserstack | Appium  | Allure | Allure</br>TestOps  | Jira | Telegram  | Slack |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| &nbsp; <a href="https://developer.android.com/studio"><img alt="AndroidStudio" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/AndroidStudio.svg" width="50"/></a>  | &nbsp; &nbsp; &nbsp;<a href="https://www.browserstack.com"><img alt="Browserstack" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Browserstack.svg" width="50" /></a>  | <a href="https://appium.io/"><img alt="Appium" height="45" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Appium.svg" width="45"/></a>  | <a href="https://github.com/allure-framework/"><img alt="Allure" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Allure.svg" width="50"/></a>  | <a href="https://qameta.io"><img alt="Allure TestOps" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/AllureTestOps.svg" width="50"/></a>  | <a href="https://www.atlassian.com/software/jira"><img alt="Jira" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jira.svg" width="50"/></a>  | &nbsp; <a href="https://telegram.org/"><img alt="Telegram" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Telegram.svg" width="50"/></a>  | <a href="https://slack.com"><img alt="Slack" height="50" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Slack.svg" width="50"/></a>  |
 
 <a id="testcases"></a>
 ## Реализованные проверки :mag:
@@ -36,7 +144,7 @@
 ✓ Проверка шэринга материалов
 
 <a id="jenkins"></a>
-## <a href="https://jenkins.autotests.cloud/job/iiii-tech.com/">Сборка в Jenkins</a> <img alt="Jenkins" height="32" src="/images/logos/Jenkins.svg"/></img></br>
+## <a href="https://jenkins.autotests.cloud/job/iiii-tech.com/">Сборка в Jenkins</a> <img alt="Jenkins" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jenkins.svg"/></img></br>
 <img src="/images/screens/jenkins.jpg"></br>
 ### Параметры сборки в Jenkins:
 - Browser (браузер, по умолчанию chrome)
