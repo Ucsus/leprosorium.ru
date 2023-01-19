@@ -42,9 +42,8 @@ public class LoginPage {
 
     @Step("Авторизация")
     public LoginPage authorizationFormFill() {
-        user.sendKeys(username);
+        user.setValue(username);
         pass.setValue(password).pressEnter();
-        yarrr.click();
         return this;
     }
 
