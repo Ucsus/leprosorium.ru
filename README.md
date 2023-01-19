@@ -221,8 +221,12 @@ allure serve build/allure-results
 <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/jira.jpg"></br>
 
 <a id="telegram"></a>
-## Отчет в Telegram <img alt="jira" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Telegram.svg"/></img></br>
-<img src="/images/screens/telegram.jpg"></br>
+## Отчет в Telegram <img alt="Telegram" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Telegram.svg"/></img></br>
+<img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/telegram.jpg"></br>
+
+<a id="slack"></a>
+## Отчет в Slack <img alt="slack" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Slack.svg"/></img></br>
+<img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/slack.jpg"></br>
 
 <a id="video"></a>
 ## Видео прохождения тестов :clapper:
