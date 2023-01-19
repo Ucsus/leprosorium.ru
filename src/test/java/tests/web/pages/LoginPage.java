@@ -17,6 +17,8 @@ public class LoginPage {
             user = $("#js-auth_username"),
             pass = $("#js-auth_password"),
             yarrr = $("#js-auth_form_submit"),
+            rememberMe = $("js-auth_forever"),
+            rememberIp = $("js-auth_remember_ip"),
             logout = $("#js-header_logout_link");
 
     @Step("Открываем страницу авторизации: {pageUrl}")
@@ -44,6 +46,9 @@ public class LoginPage {
         sleep(1000);
         pass.sendKeys(password);
         sleep(1000);
+        rememberMe.click();
+        sleep(1000);
+        rememberIp.click();
         yarrr.click();
         return this;
     }
