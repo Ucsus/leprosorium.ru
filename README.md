@@ -196,10 +196,10 @@ allure serve build/allure-results
 
 <a id="jenkins"></a>
 ## <a href="https://jenkins.autotests.cloud/job/Lepra//">Сборка в Jenkins</a> <img alt="Jenkins" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jenkins.svg"/></img></br>
-<img src="/images/screens/jenkins.jpg"></br>
+<img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/jenkinsmain.jpg"></br>
 
 <a id="allure"></a>
-## Allure отчёт <img alt="Allure" height="32" src="/images/logos/Allure.svg"/></img></br>
+## Allure отчёт <img alt="Allure" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Allure.svg"/></img></br>
 ### <a href="https://jenkins.autotests.cloud/job/iiii-tech.com/6/allure/">Обзор</a>
 <img src="/images/screens/alluremain.jpg"></br>
 ### <a href="https://jenkins.autotests.cloud/job/iiii-tech.com/6/allure/#packages">Тесты</a>
@@ -208,18 +208,18 @@ allure serve build/allure-results
 <img src="/images/screens/alluregraphs.jpg"></br>
 
 <a id="alluretestops"></a>
-## Allure TestOps <img alt="Allure TestOps" height="32" src="/images/logos/testops.svg"/></img></br>
+## Allure TestOps <img alt="Allure TestOps" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/AllureTestOps.svg"/></img></br>
 ### Обзор
 <img src="/images/screens/alluretestopslaunches.jpg"></br>
 ### Тесты
 <img src="/images/screens/alluretestopstests.jpg"></br>
 
 <a id="jira"></a>
-## Интеграция с Jira <img alt="jira" height="32" src="/images/logos/jira.svg"/></img></br>
+## Интеграция с Jira <img alt="jira" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jira.svg"/></img></br>
 <img src="/images/screens/jira.jpg"></br>
 
 <a id="telegram"></a>
-## Отчет в Telegram <img alt="jira" height="32" src="/images/logos/Telegram.svg"/></img></br>
+## Отчет в Telegram <img alt="jira" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Telegram.svg"/></img></br>
 <img src="/images/screens/telegram.jpg"></br>
 
 <a id="video"></a>
