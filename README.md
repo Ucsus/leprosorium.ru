@@ -109,7 +109,7 @@
     </td>
     <td align="center"  width="96">
       <a href="https://www.atlassian.com/software/jira">
-        <img src="https://www.atlassian.com/software/jira" width="48" height="48" alt="Jira" />
+        <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jira.svg" width="48" height="48" alt="Jira" />
       </a>
       <br>Jira
     </td>
@@ -126,10 +126,10 @@
       <br>Slack
     </td>
     <td align="center" width="96">
-      <a href="#macropower-tech" >
-        <img src="https://raw.githubusercontent.com/cncf/artwork/master/projects/thanos/icon/color/thanos-icon-color.svg" width="48" height="48" alt="Thanos" />
+      <a href="h" >
+        <img src="" width="48" height="48" alt="" />
       </a>
-      <br>Thanos
+      <br>
     </td>
   </tr>
 </table>
