@@ -37,19 +37,13 @@ public class LoginPage {
     @Step("Проверяем видимость формы авторизации")
     public LoginPage loginFormCheck() {
         loginForm.shouldHave(Condition.visible);
-        sleep(500);
         return this;
     }
 
     @Step("Авторизация")
     public LoginPage authorizationFormFill() {
         user.sendKeys(username);
-        sleep(500);
-        pass.sendKeys(password);
-//        sleep(500);
-//        rememberMe.click();
-//        sleep(500);
-//        rememberIp.click();
+        pass.setValue(password).pressEnter();
         yarrr.click();
         return this;
     }
