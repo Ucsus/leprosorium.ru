@@ -182,7 +182,7 @@
 > Как только это будет сделано, вы можете запустить следующие команды:
 ```
 gradle clean webTests
-gradle clean mobileTests -DmobileDeviceHost=emulation
+gradle clean mobileTests -DmobileHost=emulation
 ```
 
 ### Удалённый запуск:
