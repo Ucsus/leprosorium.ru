@@ -14,7 +14,8 @@
 ➠ <a href="#jira">Интеграция с Jira</a></br>
 ➠ <a href="#telegram">Отчет в Telegram</a></br>
 ➠ <a href="#slack">Отчет в Slack</a></br>
-➠ <a href="#video">Видео прохождения тестов</a>
+➠ <a href="#video">Видео прохождения теста</a>
+➠ <a href="#video">BrowserStack</a>
 
 <a id="stack"></a>
 ## Cтек технологий :hammer_and_wrench:
@@ -229,7 +230,17 @@ allure serve build/allure-results
 <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/slack.jpg"></br>
 
 <a id="video"></a>
-## Видео прохождения тестов :clapper:
-https://user-images.githubusercontent.com/7962244/202163328-65371d67-3944-4978-b1e8-e82b5102c220.mp4
+## Видео прохождения теста :clapper:
+https://user-images.githubusercontent.com/7962244/213429054-df407870-c8c7-4451-9cb7-e88d79d3cb15.mp4
+
+
+<a id="browserstack"></a>
+### BrowserStack<img alt="Browserstack" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Browserstack.svg"/></img></br>
+### Обзор
+<img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/browserstack1.jpg"></br>
+## Видео прохождения мобильного теста в BrowserStack:clapper:
+https://user-images.githubusercontent.com/7962244/213428972-84b7d80e-0323-419f-8b5e-fe072c61ad68.mp4
+
+
 
 
