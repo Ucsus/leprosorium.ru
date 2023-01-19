@@ -14,9 +14,9 @@
 ➠ <a href="#jira">Интеграция с Jira</a></br>
 ➠ <a href="#telegram">Отчет в Telegram</a></br>
 ➠ <a href="#slack">Отчет в Slack</a></br>
-➠ <a href="#video">Видео прохождения теста</a>
-➠ <a href="#video">Appium</a>
-➠ <a href="#video">BrowserStack</a>
+➠ <a href="#video">Видео прохождения теста</a></br>
+➠ <a href="#appium">Appium</a></br>
+➠ <a href="#browserstack">BrowserStack</a>
 
 <a id="stack"></a>
 ## Cтек технологий :hammer_and_wrench:
