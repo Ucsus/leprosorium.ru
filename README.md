@@ -5,16 +5,16 @@
 >Состоит из сайта, а также приложений для iOS (официальное) и Android (неофициальное).
 
 ## Содержание :bookmark_tabs:
-🔴 <a href="#stack">Cтек технологий</a></br>
-🔴 <a href="#testcases">Реализованные проверки</a></br>
-🔴 <a href="#jenkins">Сборка в Jenkins</a></br>
-🔴 <a href="#console">Запуск из терминала</a></br>
-🔴 <a href="#allure">Allure отчет</a></br>
-🔴 <a href="#alluretestops">Allure TestOps</a></br>
-🔴 <a href="#jira">Интеграция с Jira</a></br>
-🔴 <a href="#telegram">Отчет в Telegram</a></br>
-🔴 <a href="#slack">Отчет в Slack</a></br>
-🔴 <a href="#video">Видео прохождения тестов</a>
+➠ <a href="#stack">Cтек технологий</a></br>
+➠ <a href="#testcases">Реализованные проверки</a></br>
+➠ <a href="#jenkins">Сборка в Jenkins</a></br>
+➠ <a href="#console">Запуск из терминала</a></br>
+➠ <a href="#allure">Allure отчет</a></br>
+➠ <a href="#alluretestops">Allure TestOps</a></br>
+➠ <a href="#jira">Интеграция с Jira</a></br>
+➠ <a href="#telegram">Отчет в Telegram</a></br>
+➠ <a href="#slack">Отчет в Slack</a></br>
+➠ <a href="#video">Видео прохождения тестов</a>
 
 <a id="stack"></a>
 ## Cтек технологий :hammer_and_wrench:
