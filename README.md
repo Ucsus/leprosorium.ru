@@ -218,7 +218,7 @@ allure serve build/allure-results
 
 <a id="jira"></a>
 ## Интеграция с Jira <img alt="jira" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jira.svg"/></img></br>
-<img src="/images/screens/jira.jpg"></br>
+<img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/screens/jira.jpg"></br>
 
 <a id="telegram"></a>
 ## Отчет в Telegram <img alt="jira" height="32" src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Telegram.svg"/></img></br>
