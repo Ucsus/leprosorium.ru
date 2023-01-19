@@ -11,7 +11,7 @@ import static tests.api.specs.Specs.request;
 import static tests.api.specs.Specs.responseSpec;
 
 public class InboxPage {
-   public InboxPage checkWriteInboxComment(String commentText) {
+    public InboxPage checkWriteInboxComment(String commentText) {
         ApiConfig config = ConfigFactory.create(ApiConfig.class, System.getProperties());
         LoginData body = new LoginData();
         body.setUsername(config.username());
