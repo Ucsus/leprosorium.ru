@@ -1,5 +1,6 @@
 package tests.web;
 
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -11,6 +12,11 @@ import static helpers.FakerData.*;
 public class FraudTest extends TestBase {
 
     @Test
+    @Feature("Тестирование заполнения формы в магазине")
+    @Story("Тестирование формы")
+    @Owner("Ucsus")
+    @Severity(SeverityLevel.NORMAL)
+    @Link(value = "Fraud page", url = "https://leprosorium.ru/fraud/")
     @DisplayName("Проверка заполнения формы в магазине")
     void fraudFormFillTest() {
         fraudPage

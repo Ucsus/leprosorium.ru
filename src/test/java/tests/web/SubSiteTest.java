@@ -1,5 +1,6 @@
 package tests.web;
 
+import io.qameta.allure.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -15,6 +16,11 @@ public class SubSiteTest extends TestBase {
     }
 
     @Test
+    @Feature("Тестирование откртыия формы чата и отправка сообщения")
+    @Story("Тестирование чата")
+    @Owner("Ucsus")
+    @Severity(SeverityLevel.NORMAL)
+    @Link(value = "Login page", url = "https://leprosorium.ru/login/")
     @DisplayName("Проверка ДискоЧата")
     void discoChatTest() {
         mainPage
@@ -24,6 +30,11 @@ public class SubSiteTest extends TestBase {
     }
 
     @Test
+    @Feature("Тестирование написания нового поста на подлепре")
+    @Story("Тестирование написания поста")
+    @Owner("Ucsus")
+    @Severity(SeverityLevel.NORMAL)
+    @Link(value = "Qaguru page", url = "https://qaguru.leprosorium.ru/")
     @DisplayName("Проверка постинга")
     void subSitePostTest() {
         mainPage
@@ -32,6 +43,11 @@ public class SubSiteTest extends TestBase {
     }
 
     @Test
+    @Feature("Тестирование удаления первого поста на подлепре")
+    @Story("Тестирование удаления поста")
+    @Owner("Ucsus")
+    @Severity(SeverityLevel.NORMAL)
+    @Link(value = "Login page", url = "https://leprosorium.ru/login/")
     @DisplayName("Удаление верхнего поста")
     void postModerate() {
         mainPage
