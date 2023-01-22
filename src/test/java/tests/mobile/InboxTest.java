@@ -4,10 +4,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+@Tag("mobile")
+@Tag("all")
 public class InboxTest extends TestBase {
 
-    @Tag("mobile")
-    @Tag("all")
     @Test
     @DisplayName("Проверка комментирования в Инбоксе")
     void inboxTest() {

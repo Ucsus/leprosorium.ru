@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.sleep;
 
+@Tag("mobile")
+@Tag("all")
 public class SearchTest extends TestBase {
 
-    @Tag("mobile")
-    @Tag("all")
     @Test
     @DisplayName("Проверка поиска")
     void searchPostTest() {

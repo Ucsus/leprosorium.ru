@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 
 import static helpers.FakerData.*;
 
+@Tag("web")
+@Tag("all")
 public class FraudTest extends TestBase {
 
-    @Tag("web")
-    @Tag("all")
     @Test
     @DisplayName("Проверка заполнения формы в магазине")
     void fraudFormFillTest() {

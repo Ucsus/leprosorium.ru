@@ -5,6 +5,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+@Tag("web")
+@Tag("all")
 public class SubSiteTest extends TestBase {
 
     @BeforeEach
@@ -12,8 +14,6 @@ public class SubSiteTest extends TestBase {
         mainPage.openNavigationMenu().openSubSite();
     }
 
-    @Tag("web")
-    @Tag("all")
     @Test
     @DisplayName("Проверка ДискоЧата")
     void discoChatTest() {
@@ -23,8 +23,6 @@ public class SubSiteTest extends TestBase {
                 .closeDiscoChat();
     }
 
-    @Tag("web")
-    @Tag("all")
     @Test
     @DisplayName("Проверка постинга")
     void subSitePostTest() {
@@ -33,8 +31,6 @@ public class SubSiteTest extends TestBase {
                 .checkPost();
     }
 
-    @Tag("web")
-    @Tag("all")
     @Test
     @DisplayName("Удаление верхнего поста")
     void postModerate() {

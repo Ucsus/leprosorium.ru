@@ -4,9 +4,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+@Tag("ui")
+@Tag("all")
 public class DomainsTest extends TestBase{
-    @Tag("ui")
-    @Tag("all")
+
     @Test
     @DisplayName("Проверка подписанных подлепр")
 

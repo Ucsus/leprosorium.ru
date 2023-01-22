@@ -5,9 +5,9 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+@Tag("ui")
+@Tag("all")
 public class PostDeleteTest extends TestBase {
-    @Tag("ui")
-    @Tag("all")
     @Test
     @Disabled
     @DisplayName("Удаление поста {postId}")

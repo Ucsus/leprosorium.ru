@@ -4,10 +4,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+@Tag("mobile")
+@Tag("all")
 public class LoginTest extends TestBase {
 
-    @Tag("mobile")
-    @Tag("all")
     @Test
     @DisplayName("Проверка авторизации с корректным логином и паролем")
     void successLoginTest() {
@@ -16,8 +16,6 @@ public class LoginTest extends TestBase {
                 .checkAuthorization();
     }
 
-    @Tag("mobile")
-    @Tag("all")
     @Test
     @DisplayName("Проверка авторизации с неправильным паролем")
     void invalidPasswordTest() {
@@ -25,8 +23,6 @@ public class LoginTest extends TestBase {
                 .invalidPassword();
     }
 
-    @Tag("mobile")
-    @Tag("all")
     @Test
     @DisplayName("Проверка авторизации с неправильным логином")
     void invalidUserTest() {

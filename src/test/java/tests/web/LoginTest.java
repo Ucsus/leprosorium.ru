@@ -8,6 +8,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+@Tag("web")
+@Tag("all")
 public class LoginTest extends TestBase {
     @BeforeEach
     @Override
@@ -15,8 +17,6 @@ public class LoginTest extends TestBase {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
-    @Tag("web")
-    @Tag("all")
     @Test
     @Feature("Тестирование авторизации с кооректными данными")
     @Story("Тестирование авторизации на сайте")
