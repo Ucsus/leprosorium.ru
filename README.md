@@ -1,5 +1,5 @@
 # Проект автоматизации тестирования сайта [Лепрозорий](https://leprosorium.ru)
-<a href="https://leprosorium.ru" target="_blank"><img src="https://i.postimg.cc/JnKd1x7h/header-1.jpg?raw=true"></a>
+<a href="https://leprosorium.ru" target="_blank"><img src="https://i.postimg.cc/ZnrnzjvD/68747470733a2f2f692e706f7374696d672e63632f4a6e4b64317837682f6865616465722d312e6a70673f7261773d747275.jpg?raw=true"></a>
 >Суверенный Лепрозорий — закрытый коллективный блог, со своей мифологией,\
 >своеобразными правилами и своеобразным цинично-глумливым юмором, отсоединившийся от <a href="https://d3.ru/">dirty.ru.</a>\
 >Состоит из сайта, а также приложений для iOS (официальное) и Android (неофициальное).
