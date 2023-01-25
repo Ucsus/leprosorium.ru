@@ -190,12 +190,11 @@ gradle clean mobileTests -DmobileHost=emulation
 ```
 
 ### Удалённый запуск:
-> В каталоге resources/configuration находятся конфиги с параметрами для запуска тестов.<br>
+> В каталоге resources/config находятся конфиги с параметрами для запуска тестов.<br>
 > Необходимо заполнить следующие файлы: <br>
-> src/test/resources/config/web/remote.properties <br>
-> src/test/resources/config/mobile/browserstack.properties <br>
-> src/test/resources/config/api/api.properties <br>
-> (примеры включены в этот проект github).<br>
+> src/test/resources/remote.properties <br>
+> src/test/resources/browserstack.properties <br>
+> src/test/resources/api.properties <br>
 > Как только это будет сделано, вы можете запустить следующие команды:
 ```
 gradle clean ${TYPE}Tests
