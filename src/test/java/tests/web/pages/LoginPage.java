@@ -37,7 +37,7 @@ public class LoginPage {
         return this;
     }
 
-    @Step("Авторизация")
+    @Step("Вводим логин и пароль")
     public LoginPage authorizationFormFill() {
         user.setValue(username);
         pass.setValue(password).pressEnter();
