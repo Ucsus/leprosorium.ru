@@ -216,6 +216,16 @@ allure serve build/allure-results
 <p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
 <a id=properties></a>
+<table>
+  <tr>
+    <td align="center">
+      <b>baseUrl</b>
+    </td>
+    <td align="center">
+      базовый URL для веб-тестов
+    </td>
+      </tr>
+  </table>
 ## Файлы свойств :bookmark_tabs:
 Возможные свойства в .properties файле:
 ```properties
