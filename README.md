@@ -323,7 +323,7 @@ allure serve build/allure-results
     имя activities приложения
     </td>
   </tr>
-      <tr>
+   <tr>
     <td align="center">
       <b>&nbsp;</b>
     </td>
@@ -403,13 +403,40 @@ allure serve build/allure-results
     URL удалённого сервера (BrowserStack) 
     </td>
   </tr>
+     <tr>
+    <td align="center">
+      <b>&nbsp;</b>
+    </td>
+    <td align="left">
+     &nbsp;
+    </td>
+  </tr>
+     <tr>
+    <td align="center">
+      <b>uid</b>
+    </td>
+    <td align="left">
+     ID пользователя сайта
+    </td>
+  </tr>
+     <tr>
+    <td align="center">
+      <b>username</b>
+    </td>
+    <td align="left">
+    логин пользователя сайта
+    </td>
+  </tr>
+       <tr>
+    <td align="center">
+      <b>password</b>
+    </td>
+    <td align="left">
+    пароль пользователя сайта
+    </td>
+  </tr>
   </table>
 
-
-
-uid=  ID пользователя сайта
-username=  логин пользователя сайта
-password=  пароль пользователя сайта
 <p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
 <a id="jenkins"></a>
