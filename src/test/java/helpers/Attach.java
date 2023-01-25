@@ -24,7 +24,7 @@ public class Attach {
         return message;
     }
 
-    @Attachment(value = "Код страницы", type = "text/plain")
+    @Attachment(value = "Page source", type = "text/plain")
     public static byte[] pageSource() {
         return getWebDriver().getPageSource().getBytes(StandardCharsets.UTF_8);
     }
@@ -41,15 +41,15 @@ public class Attach {
         );
     }
 
-    @Attachment(value = "Видео", type = "text/html", fileExtension = ".html")
-    public static String video() {
+    @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
+    public static String addVideo() {
         return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
                 + getVideoUrl(getSessionId())
                 + "' type='video/mp4'></video></body></html>";
     }
 
-    @Attachment(value = "Видео", type = "text/html", fileExtension = ".html")
-    public static String videoBS(String sessionId) {
+    @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
+    public static String video(String sessionId) {
         return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
                 + BrowserStack.videoUrl(sessionId)
                 + "' type='video/mp4'></video></body></html>";

@@ -2,7 +2,7 @@ package helpers;
 
 import com.github.javafaker.Faker;
 
-public class TestData {
+public class FakerData {
     static String prefix = "+7";
     private static final Faker faker = new Faker();
     public static String

@@ -12,7 +12,7 @@ import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
-import static helpers.TestData.newPost;
+import static helpers.FakerData.newPost;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class InboxPage {

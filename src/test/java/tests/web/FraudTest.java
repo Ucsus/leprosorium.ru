@@ -5,7 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-import static helpers.TestData.*;
+import static helpers.FakerData.*;
 
 @Tag("web")
 @Tag("all")
@@ -35,5 +35,7 @@ public class FraudTest extends TestBase {
                 .setApartment(apartment)
                 .setCommentForOrder(commentForOrder)
                 .closeForm();
+        loginPage
+                .logout();
     }
 }

@@ -6,7 +6,7 @@ import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
-import static helpers.TestData.newPost;
+import static helpers.FakerData.newPost;
 
 public class MainPage {
     String imageSource = "https://loremflickr.com/500/500/girl";

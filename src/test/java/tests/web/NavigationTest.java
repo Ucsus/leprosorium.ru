@@ -21,5 +21,7 @@ public class NavigationTest extends TestBase {
                 .openNavigationMenu()
                 .openSubSite()
                 .headerCheck();
+        loginPage
+                .logout();
     }
 }

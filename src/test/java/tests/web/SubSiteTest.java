@@ -31,6 +31,7 @@ public class SubSiteTest extends TestBase {
 
     @Test
     @Feature("Тестирование написания нового поста на подлепре")
+    @Story("Тестирование написания поста")
     @Owner("Ucsus")
     @Severity(SeverityLevel.NORMAL)
     @Link(value = "Qaguru page", url = "https://qaguru.leprosorium.ru/")

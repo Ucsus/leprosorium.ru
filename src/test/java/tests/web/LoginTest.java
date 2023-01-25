@@ -30,6 +30,7 @@ public class LoginTest extends TestBase {
                 .loginButtonClick()
                 .loginFormCheck()
                 .authorizationFormFill()
-                .authorizationCheck();
+                .authorizationCheck()
+                .logout();
     }
 }
