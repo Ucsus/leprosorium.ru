@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("web")
 @Tag("all")
+@Feature("Тестирование откртыия формы чата и отправка сообщения")
 public class SubSiteTest extends TestBase {
 
     @BeforeEach
@@ -20,7 +21,6 @@ public class SubSiteTest extends TestBase {
     }
 
     @Test
-    @Feature("Тестирование откртыия формы чата и отправка сообщения")
     @Owner("Ucsus")
     @Severity(SeverityLevel.NORMAL)
     @Link(value = "Login page", url = "https://leprosorium.ru/login/")

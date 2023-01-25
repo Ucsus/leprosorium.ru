@@ -7,10 +7,10 @@ import org.junit.jupiter.api.Test;
 
 @Tag("web")
 @Tag("all")
+@Feature("Тестирование авторизации с кооректными данными")
 public class LoginTest extends TestBase {
 
     @Test
-    @Feature("Тестирование авторизации с кооректными данными")
     @Owner("Ucsus")
     @Severity(SeverityLevel.NORMAL)
     @Link(value = "Login page", url = "https://leprosorium.ru/login/")

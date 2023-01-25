@@ -18,6 +18,6 @@ public class SearchTest extends TestBase {
         searchPage
                 .openMenu()
                 .searchQuery("Ванна пенопласта");
-        sleep(10000);
+        sleep(1000);
     }
 }

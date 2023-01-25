@@ -7,10 +7,10 @@ import org.junit.jupiter.api.Test;
 
 @Tag("web")
 @Tag("all")
+@Feature("Тестирование поиска и сравнение с автором")
 public class SearchTest extends TestBase {
 
     @Test
-    @Feature("Тестирование поиска и сравнение с автором")
     @Owner("Ucsus")
     @Severity(SeverityLevel.NORMAL)
     @Link(value = "Search page", url = "https://leprosorium.ru/search/")

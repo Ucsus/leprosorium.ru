@@ -7,10 +7,10 @@ import org.junit.jupiter.api.Test;
 
 @Tag("web")
 @Tag("all")
+@Feature("Тестирование перехода на подлепру")
 public class NavigationTest extends TestBase {
 
     @Test
-    @Feature("Тестирование перехода на подлепру")
     @Owner("Ucsus")
     @Severity(SeverityLevel.NORMAL)
     @Link(value = "Main page", url = "https://leprosorium.ru/")

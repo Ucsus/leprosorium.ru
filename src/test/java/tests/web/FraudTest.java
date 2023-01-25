@@ -9,10 +9,10 @@ import static helpers.TestData.*;
 
 @Tag("web")
 @Tag("all")
+@Feature("Тестирование заполнения формы в магазине")
 public class FraudTest extends TestBase {
 
     @Test
-    @Feature("Тестирование заполнения формы в магазине")
     @Owner("Ucsus")
     @Severity(SeverityLevel.NORMAL)
     @Link(value = "Fraud page", url = "https://leprosorium.ru/fraud/")
