@@ -223,7 +223,7 @@ allure serve build/allure-results
     <td align="center">
       <b>baseUrl</b>
     </td>
-    <td align="center">
+    <td align="left">
       базовый URL для веб-тестов
     </td>
   </tr>
@@ -231,16 +231,60 @@ allure serve build/allure-results
     <td align="center">
       <b>browser</b>
     </td>
-    <td align="center">
+    <td align="left">
       браузер для веб-тестов
     </td>
   </tr>
+    <tr>
+    <td align="center">
+      <b>browserVersion</b>
+    </td>
+    <td align="left">
+      версия браузера для веб-тестов
+    </td>
+  </tr>
+    <tr>
+    <td align="center">
+      <b>browser</b>
+    </td>
+    <td align="left">
+      размер браузера для веб-тестов
+    </td>
+  </tr>
+      <tr>
+    <td align="center">
+      <b>remoteUrl</b>
+    </td>
+    <td align="left">
+      URL удалённого сервера (Selenoid)
+    </td>
+  </tr>
+    <tr>
+    <td align="center">
+      <b>selenoidLogin</b>
+    </td>
+    <td align="left">
+     логин удалённого сервера (Selenoid)
+    </td>
+  </tr>
+    <tr>
+    <td align="center">
+      <b>selenoidPassword</b>
+    </td>
+    <td align="left">
+     пароль удалённого сервера (Selenoid)
+    </td>
+  </tr>
+      <tr>
+    <td align="center">
+      <b>&nbsp;</b>
+    </td>
+    <td align="left">
+     &nbsp;
+    </td>
+  </tr>
   </table>
-browserSize=  версия браузера для веб-тестов
-browserSize=  размер браузера для веб-тестов
-remoteUrl=  URL удалённого сервера (Selenoid)
-selenoidLogin=  логин удалённого сервера (Selenoid)
-selenoidPassword=  пароль удалённого сервера (Selenoid)
+
 
 platformName=  ОС мобильного устройства
 platformVersion=  версия ОС
@@ -261,7 +305,6 @@ url=  URL удалённого сервера (BrowserStack)
 uid=  ID пользователя сайта
 username=  логин пользователя сайта
 password=  пароль пользователя сайта
-```
 <p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
 <a id="jenkins"></a>
