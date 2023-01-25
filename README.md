@@ -283,24 +283,129 @@ allure serve build/allure-results
      &nbsp;
     </td>
   </tr>
+  <tr>
+    <td align="center">
+      <b>platformName</b>
+    </td>
+    <td align="left">
+    ОС мобильного устройства
+    </td>
+  </tr>
+    <tr>
+    <td align="center">
+      <b>platformVersion</b>
+    </td>
+    <td align="left">
+    версия ОС
+    </td>
+  </tr>
+      <tr>
+    <td align="center">
+      <b>deviceName</b>
+    </td>
+    <td align="left">
+    имя или серийный номер устройства
+    </td>
+  </tr>
+     <tr>
+    <td align="center">
+      <b>appPackage</b>
+    </td>
+    <td align="left">
+    имя Java пакета Android приложения
+    </td>
+  </tr>
+      <tr>
+    <td align="center">
+      <b>appActivity</b>
+    </td>
+    <td align="left">
+    имя activities приложения
+    </td>
+  </tr>
+      <tr>
+    <td align="center">
+      <b>&nbsp;</b>
+    </td>
+    <td align="left">
+     &nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>user</b>
+    </td>
+    <td align="left">
+    логин для авторизации в BrowserStack
+    </td>
+  </tr>
+    <tr>
+    <td align="center">
+      <b>key</b>
+    </td>
+    <td align="left">
+    ключ для авторизации в BrowserStack
+    </td>
+  </tr>
+   <tr>
+    <td align="center">
+      <b>app</b>
+    </td>
+    <td align="left">
+    ключ вызова приложения в BrowserStack
+    </td>
+  </tr>
+    <tr>
+    <td align="center">
+      <b>device</b>
+    </td>
+    <td align="left">
+    имя устройства в BrowserStack
+    </td>
+  </tr>
+     <tr>
+    <td align="center">
+      <b>osVersion</b>
+    </td>
+    <td align="left">
+    версия ОС в BrowserStack
+    </td>
+  </tr>
+    <tr>
+    <td align="center">
+      <b>project</b>
+    </td>
+    <td align="left">
+    название проекта
+    </td>
+  </tr>
+       <tr>
+    <td align="center">
+      <b>build</b>
+    </td>
+    <td align="left">
+    название билда
+    </td>
+  </tr>
+    <tr>
+    <td align="center">
+      <b>name</b>
+    </td>
+    <td align="left">
+    имя тестов
+    </td>
+  </tr>
+      <tr>
+    <td align="center">
+      <b>url</b>
+    </td>
+    <td align="left">
+    URL удалённого сервера (BrowserStack) 
+    </td>
+  </tr>
   </table>
 
 
-platformName=  ОС мобильного устройства
-platformVersion=  версия ОС
-deviceName=  имя или серийный номер устройства
-appPackage=  имя Java пакета Android приложения
-appActivity=  имя activities приложения
-
-user=  логин для авторизации в BrowserStack
-key=  ключ для авторизации в BrowserStack
-app=  ключ вызова приложения в BrowserStack
-device=  имя устройства в BrowserStack
-osVersion=  версия ОС в BrowserStack
-project=  название проекта
-build=  название билда
-name=  имя тестов
-url=  URL удалённого сервера (BrowserStack) 
 
 uid=  ID пользователя сайта
 username=  логин пользователя сайта
