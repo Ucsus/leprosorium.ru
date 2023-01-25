@@ -71,24 +71,28 @@ tasks.withType(Test) {
 }
 
 task apiTests(type: Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags "ui"
     }
 }
 
 task mobile_tests(type: Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags "mobile"
     }
 }
 
 task web_tests(type: Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags "web"
     }
 }
 
 task all_tests(type: Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags 'all'
     }
