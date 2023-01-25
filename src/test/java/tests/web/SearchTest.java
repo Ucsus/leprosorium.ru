@@ -11,12 +11,13 @@ public class SearchTest extends TestBase {
 
     @Test
     @Feature("Тестирование поиска и сравнение с автором")
-    @Story("Тестирование поиска")
     @Owner("Ucsus")
     @Severity(SeverityLevel.NORMAL)
     @Link(value = "Search page", url = "https://leprosorium.ru/search/")
     @DisplayName("Проверка поиска")
     void bigSearchTest() {
+        LoginTest loginTest = new LoginTest();
+        loginTest.authorization();
         searchPage
                 .openPage("/search")
                 .searchQuery("Масляная рыба")

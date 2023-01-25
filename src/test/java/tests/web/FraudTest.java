@@ -13,12 +13,13 @@ public class FraudTest extends TestBase {
 
     @Test
     @Feature("Тестирование заполнения формы в магазине")
-    @Story("Тестирование формы")
     @Owner("Ucsus")
     @Severity(SeverityLevel.NORMAL)
     @Link(value = "Fraud page", url = "https://leprosorium.ru/fraud/")
     @DisplayName("Проверка заполнения формы в магазине")
     void fraudFormFillTest() {
+        LoginTest loginTest = new LoginTest();
+        loginTest.authorization();
         fraudPage
                 .openPage("/fraud")
                 .addPinToCart()

@@ -17,9 +17,7 @@ public class LoginPage {
             loginForm = $("#js-auth_form"),
             user = $("#js-auth_username"),
             pass = $("#js-auth_password"),
-            yarrr = $("#js-auth_form_submit"),
             rememberMe = $(byText("Запомните меня!")),
-            rememberIp = $(byText("Запомните мой ip-адрес!")),
             logout = $("#js-header_logout_link");
 
     @Step("Открываем страницу авторизации: {pageUrl}")
@@ -44,6 +42,7 @@ public class LoginPage {
     public LoginPage authorizationFormFill() {
         user.setValue(username);
         pass.setValue(password).pressEnter();
+        rememberMe.click();
         return this;
     }
 
@@ -52,10 +51,4 @@ public class LoginPage {
         logout.shouldHave(Condition.text("logout"));
         return this;
     }
-//
-//    @Step("Выход из профиля")
-//    public LoginPage logout() {
-//        logout.click();
-//        return this;
-//    }
 }

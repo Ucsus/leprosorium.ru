@@ -12,12 +12,15 @@ public class SubSiteTest extends TestBase {
 
     @BeforeEach
     void openSubSite() {
-        mainPage.openNavigationMenu().openSubSite();
+        LoginTest loginTest = new LoginTest();
+        loginTest.authorization();
+        mainPage
+                .openNavigationMenu()
+                .openSubSite();
     }
 
     @Test
     @Feature("Тестирование откртыия формы чата и отправка сообщения")
-    @Story("Тестирование чата")
     @Owner("Ucsus")
     @Severity(SeverityLevel.NORMAL)
     @Link(value = "Login page", url = "https://leprosorium.ru/login/")
@@ -43,7 +46,6 @@ public class SubSiteTest extends TestBase {
 
     @Test
     @Feature("Тестирование удаления первого поста на подлепре")
-    @Story("Тестирование удаления поста")
     @Owner("Ucsus")
     @Severity(SeverityLevel.NORMAL)
     @Link(value = "Login page", url = "https://leprosorium.ru/login/")

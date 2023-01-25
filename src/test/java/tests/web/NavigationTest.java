@@ -11,12 +11,13 @@ public class NavigationTest extends TestBase {
 
     @Test
     @Feature("Тестирование перехода на подлепру")
-    @Story("Проверка заголовка при переходе")
     @Owner("Ucsus")
     @Severity(SeverityLevel.NORMAL)
     @Link(value = "Main page", url = "https://leprosorium.ru/")
     @DisplayName("Переход на подлепру")
     void navTest() {
+        LoginTest loginTest = new LoginTest();
+        loginTest.authorization();
         mainPage
                 .openNavigationMenu()
                 .openSubSite()

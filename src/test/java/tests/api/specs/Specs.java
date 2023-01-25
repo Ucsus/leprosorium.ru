@@ -13,13 +13,11 @@ import static io.restassured.RestAssured.with;
 
 public class Specs {
     static ApiConfig config = ConfigFactory.create(ApiConfig.class);
-    static String username = config.username();
-    static String password = config.password();
 
     public static RequestSpecification request = with()
             .filter(withCustomTemplates())
-            .baseUri("https://leprosorium.ru")
-            .basePath("/api")
+            .baseUri(config.baseUrl())
+            .basePath(config.basePath())
             .log().all()
             .contentType(ContentType.JSON);
 
@@ -28,5 +26,4 @@ public class Specs {
             .log(LogDetail.BODY)
             .expectStatusCode(200)
             .build();
-
 }

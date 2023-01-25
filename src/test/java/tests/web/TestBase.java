@@ -30,11 +30,6 @@ public abstract class TestBase {
     @BeforeEach
     public void addListenerAndStart() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        loginPage
-                .openPage("/login")
-                .loginButtonClick()
-                .loginFormCheck()
-                .authorizationFormFill();
     }
 
     @AfterEach

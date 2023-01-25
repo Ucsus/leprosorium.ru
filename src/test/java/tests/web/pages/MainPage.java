@@ -25,8 +25,7 @@ public class MainPage {
             deleteLink = $(byText("удалить пост")),
             confirmButtonOk = $(".b-confirm_button", 0),
             confirmButtonCancel = $(".b-confirm_button", 1),
-            deleteMessage = $(".futu_dialog_popup_text"),
-            noPosts = $(".b-no_posts");
+            deleteMessage = $(".futu_dialog_popup_text");
 
     @Step("Открываем меню навигации")
     public MainPage openNavigationMenu() {
