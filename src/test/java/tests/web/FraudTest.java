@@ -21,7 +21,7 @@ public class FraudTest extends TestBase {
         LoginTest loginTest = new LoginTest();
         loginTest.authorization();
         fraudPage
-                .openPage("/fraud")
+                .openPage()
                 .addPinToCart()
                 .setFirstName(firstName)
                 .setLastName(lastName)

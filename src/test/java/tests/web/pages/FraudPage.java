@@ -26,9 +26,9 @@ public class FraudPage {
             commentsForOrderInput = $("[name=comments_for_order]"),
             closeButton = $(".b-fraud_market_basket a");
 
-    @Step("Открываем страницу магазина: {pageUrl}")
-    public FraudPage openPage(String pageUrl) {
-        open(pageUrl);
+    @Step("Открываем страницу магазина")
+    public FraudPage openPage() {
+        open("/fraud");
         return this;
     }
 

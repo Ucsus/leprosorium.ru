@@ -19,7 +19,7 @@ public class SearchTest extends TestBase {
         LoginTest loginTest = new LoginTest();
         loginTest.authorization();
         searchPage
-                .openPage("/search")
+                .openPage()
                 .searchQuery("Масляная рыба")
                 .sortByRating()
                 .topicStarterCheck("Flynn");

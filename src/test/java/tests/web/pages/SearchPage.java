@@ -15,9 +15,9 @@ public class SearchPage {
     public final ElementsCollection
             searchResult = $$("div.b-search_docs_results");
 
-    @Step("Открываем страницу поиска: {pageUrl}")
-    public SearchPage openPage(String pageUrl) {
-        open(pageUrl);
+    @Step("Открываем страницу поиска")
+    public SearchPage openPage() {
+        open("/search");
         return this;
     }
 
