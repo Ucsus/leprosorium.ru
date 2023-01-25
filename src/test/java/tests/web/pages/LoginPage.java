@@ -2,15 +2,15 @@ package tests.web.pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import drivers.web.BrowserWebDriver;
+import drivers.web.BrowserSetup;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class LoginPage {
-    String username = BrowserWebDriver.config.username();
-    String password = BrowserWebDriver.config.password();
+    String username = BrowserSetup.config.username();
+    String password = BrowserSetup.config.password();
 
     public final SelenideElement
             loginButton = $(".b-login_navigation_auth"),
@@ -52,9 +52,10 @@ public class LoginPage {
         logout.shouldHave(Condition.text("logout"));
         return this;
     }
-    @Step("Выход из профиля")
-    public LoginPage logout() {
-        logout.click();
-        return this;
-    }
+//
+//    @Step("Выход из профиля")
+//    public LoginPage logout() {
+//        logout.click();
+//        return this;
+//    }
 }

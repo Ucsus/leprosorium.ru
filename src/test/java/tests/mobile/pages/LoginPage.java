@@ -2,8 +2,8 @@ package tests.mobile.pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import drivers.web.BrowserWebDriver;
-import helpers.FakerData;
+import drivers.web.BrowserSetup;
+import helpers.TestData;
 import io.appium.java_client.AppiumBy;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -17,8 +17,8 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class LoginPage {
-    String username = BrowserWebDriver.config.username();
-    String password = BrowserWebDriver.config.password();
+    String username = BrowserSetup.config.username();
+    String password = BrowserSetup.config.password();
 
     public final SelenideElement
             usernameFill = $(AppiumBy.id("ru.leprosorium:id/login")),
@@ -43,7 +43,7 @@ public class LoginPage {
     @Step("Неправильный пароль")
     public LoginPage invalidPassword() {
         usernameFill.sendKeys(username);
-        passwordFill.sendKeys(FakerData.invalidPassword);
+        passwordFill.sendKeys(TestData.invalidPassword);
         yarrrButton.click();
         String actualText = new WebDriverWait(getWebDriver(), Duration.ofSeconds(1))
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//android.widget.Toast")))
@@ -54,7 +54,7 @@ public class LoginPage {
 
     @Step("Неправильный пользователь")
     public LoginPage invalidUser() {
-        usernameFill.sendKeys(FakerData.invalidUser);
+        usernameFill.sendKeys(TestData.invalidUser);
         passwordFill.sendKeys(password);
         yarrrButton.click();
         String actualText = new WebDriverWait(getWebDriver(), Duration.ofSeconds(2))

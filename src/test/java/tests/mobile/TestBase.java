@@ -54,7 +54,7 @@ public class TestBase {
         closeWebDriver();
 
         if (driver.equals("browserstack")) {
-            Attach.video(sessionId);
+            Attach.videoBS(sessionId);
         }
     }
 

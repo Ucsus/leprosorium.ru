@@ -6,7 +6,7 @@ import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class BrowserWebDriver {
+public class BrowserSetup {
     public static WebConfig config = ConfigFactory.create(WebConfig.class);
 
     public static boolean isRemoteWebDriver() {
