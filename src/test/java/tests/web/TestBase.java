@@ -16,7 +16,7 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 
 public abstract class TestBase {
-    static String useRemote = System.getProperty("webHost", "local");
+    static String useRemote = System.getProperty("webHost", "remote");
     LoginPage loginPage = new LoginPage();
     MainPage mainPage = new MainPage();
     SearchPage searchPage = new SearchPage();

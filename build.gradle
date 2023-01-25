@@ -76,19 +76,19 @@ task apiTests(type: Test) {
     }
 }
 
-task mobileTests(type: Test) {
+task mobile-tests(type: Test) {
     useJUnitPlatform {
         includeTags "mobile"
     }
 }
 
-task webTests(type: Test) {
+task web-tests(type: Test) {
     useJUnitPlatform {
         includeTags "web"
     }
 }
 
-task allTests(type: Test) {
+task all-tests(type: Test) {
     useJUnitPlatform {
         includeTags 'all'
     }

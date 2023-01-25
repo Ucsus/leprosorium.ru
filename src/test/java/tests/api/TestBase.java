@@ -9,7 +9,7 @@ import static helpers.api.CustomApiListener.withCustomTemplates;
 
 
 public class TestBase {
-    static String useRemote = System.getProperty("webHost", "local");
+    static String useRemote = System.getProperty("webHost", "remote");
     static ApiConfig config = ConfigFactory.create(ApiConfig.class);
 
     @BeforeAll
