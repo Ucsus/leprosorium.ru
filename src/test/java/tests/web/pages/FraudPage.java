@@ -41,38 +41,37 @@ public class FraudPage {
         return this;
     }
 
-    @Step("Имя")
-    public FraudPage
-    setFirstName(String value) {
+    @Step("Установка имени {value}")
+    public FraudPage setFirstName(String value) {
         firstNameInput.setValue(value);
         return this;
     }
 
-    @Step("Фамилия")
+    @Step("Установка фамилии {value}")
     public FraudPage setLastName(String value) {
         lastNameInput.setValue(value);
         return this;
     }
 
-    @Step("Email")
+    @Step("Установка email {value}")
     public FraudPage setEmail(String value) {
         emailInput.setValue(value);
         return this;
     }
 
-    @Step("Телефон")
+    @Step("Установка телефона {value}")
     public FraudPage setPhone(String value) {
         phoneInput.setValue(value);
         return this;
     }
 
-    @Step("Индекс")
+    @Step("Установка индекса {value}")
     public FraudPage setPostalCode(String value) {
         postalCodeInput.setValue(value);
         return this;
     }
 
-    @Step("Регион")
+    @Step("Установка региона {value}")
     public FraudPage setRegion(String value) {
         regionInput.click();
         $(byText(value)).click();
@@ -80,32 +79,32 @@ public class FraudPage {
         return this;
     }
 
-    @Step("Город")
+    @Step("Установка города {value}")
     public FraudPage setCity(String value) {
         cityInput.click();
         $(byText(value)).click();
         return this;
     }
 
-    @Step("Улица")
+    @Step("Установка улицы  {value}")
     public FraudPage setStreet(String value) {
         streetInput.setValue(value);
         return this;
     }
 
-    @Step("Дом")
+    @Step("Установка дома {value}")
     public FraudPage setHouse(String value) {
         houseInput.setValue(value);
         return this;
     }
 
-    @Step("Корпус")
+    @Step("Установка корпуса {value}")
     public FraudPage setBuilding(String value) {
         buildingInput.setValue(value);
         return this;
     }
 
-    @Step("Квартира")
+    @Step("Установка квартиры {value}")
     public FraudPage setApartment(String value) {
         apartmentInput.setValue(value);
         return this;
