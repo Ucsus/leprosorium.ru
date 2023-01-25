@@ -142,11 +142,11 @@
 
 В этом проекте автотесты написаны на <code>Java</code> с использованием <code>Selenide</code> для UI тестов.
 >
-> <code>Selenoid</code> запускает браузеры в <code>Docker</code> контейнере.
+> <code>JUnit 5</code> используется как библиотека модульного тестирования.
 >
 > <code>Gradle</code> используется для автоматизированной сборки проекта.
 >
-> <code>JUnit 5</code> используется как библиотека модульного тестирования.
+> <code>Selenoid</code> запускает браузеры в <code>Docker</code> контейнере.
 >
 > <code>Jenkins</code> проводит тесты.
 >
@@ -178,10 +178,11 @@
 ### Локальный запуск:
 > В каталоге resources/configuration находятся конфиги с параметрами для запуска тестов.<br>
 > Необходимо заполнить следующие файлы: <br>
+> src/test/resources/config/web/api.properties <br>
 > src/test/resources/config/web/local.properties <br>
+> src/test/resources/config/web/remote.properties <br>
 > src/test/resources/config/mobile/emulation.properties <br>
-> src/test/resources/config/mobile/emulation.properties <br>
-> (примеры включены в этот проект github). <br>
+> src/test/resources/config/mobile/browserstack.properties <br>
 > Как только это будет сделано, вы можете запустить следующие команды:
 ```
 gradle clean webTests
@@ -197,8 +198,7 @@ gradle clean mobileTests -DmobileHost=emulation
 > (примеры включены в этот проект github).<br>
 > Как только это будет сделано, вы можете запустить следующие команды:
 ```
-gradle clean 
-${TYPE}Tests
+gradle clean ${TYPE}Tests
 ```
 
 ```mermaid
