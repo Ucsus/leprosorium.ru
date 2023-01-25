@@ -1,7 +1,7 @@
 package tests.web;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
-import drivers.web.BrowserWebDriver;
+import drivers.web.BrowserSetup;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
@@ -24,7 +24,7 @@ public abstract class TestBase {
 
     @BeforeAll
     static void setUp() {
-        BrowserWebDriver.configure();
+        BrowserSetup.configure();
     }
 
     @BeforeEach
@@ -42,9 +42,9 @@ public abstract class TestBase {
         Attach.screenshotAs("Скриншот");
         Attach.pageSource();
         Attach.browserConsoleLogs();
-        Attach.addVideo();
+        Attach.video();
         if (useRemote.equals("remote")) {
-            Attach.addVideo();
+            Attach.video();
         }
         closeWebDriver();
     }

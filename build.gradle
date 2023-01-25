@@ -39,10 +39,6 @@ compileJava {
     options.encoding = 'UTF-8'
 }
 javadoc.options.encoding = 'UTF-8'
-compileTestJava {
-    options.encoding = 'UTF-8'
-}
-
 
 dependencies {
     testImplementation(
@@ -66,7 +62,6 @@ tasks.withType(Test) {
     useJUnitPlatform()
     systemProperty "chromoptions.prefs", "intl.accept_languages=en"
 
-
     testLogging {
         lifecycle {
             events "started", "skipped", "failed", "standard_error", "standard_out"
@@ -76,28 +71,24 @@ tasks.withType(Test) {
 }
 
 task apiTests(type: Test) {
-    systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags "ui"
     }
 }
 
 task mobileTests(type: Test) {
-    systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags "mobile"
     }
 }
 
 task webTests(type: Test) {
-    systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags "web"
     }
 }
 
 task allTests(type: Test) {
-    systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags 'all'
     }
