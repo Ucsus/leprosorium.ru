@@ -216,6 +216,8 @@ allure serve build/allure-results
 <p align="right"><a href="#tableofcontents">Вернуться к содержанию ⬆</a></p>
 
 <a id=properties></a>
+## Файлы свойств :bookmark_tabs:
+Возможные свойства в .properties файле:
 <table>
   <tr>
     <td align="center">
@@ -224,13 +226,16 @@ allure serve build/allure-results
     <td align="center">
       базовый URL для веб-тестов
     </td>
-      </tr>
+  </tr>
+    <tr>
+    <td align="center">
+      <b>browser</b>
+    </td>
+    <td align="center">
+      браузер для веб-тестов
+    </td>
+  </tr>
   </table>
-## Файлы свойств :bookmark_tabs:
-Возможные свойства в .properties файле:
-```properties
-baseUrl= базовый URL для веб-тестов
-browser= браузер для веб-тестов
 browserSize=  версия браузера для веб-тестов
 browserSize=  размер браузера для веб-тестов
 remoteUrl=  URL удалённого сервера (Selenoid)
