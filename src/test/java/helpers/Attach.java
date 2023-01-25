@@ -42,16 +42,16 @@ public class Attach {
     }
 
     @Attachment(value = "Видео", type = "text/html", fileExtension = ".html")
-    public static String video() {
+    public static String webVideo() {
         return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
                 + getVideoUrl(getSessionId())
                 + "' type='video/mp4'></video></body></html>";
     }
 
     @Attachment(value = "Видео", type = "text/html", fileExtension = ".html")
-    public static String videoBS(String sessionId) {
+    public static String mobileVideo(String sessionId) {
         return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
-                + BrowserStack.videoUrl(sessionId)
+                + BrowserStack.mobileVideoUrl(sessionId)
                 + "' type='video/mp4'></video></body></html>";
     }
 

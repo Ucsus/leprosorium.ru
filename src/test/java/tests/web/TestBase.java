@@ -37,9 +37,9 @@ public abstract class TestBase {
         Attach.screenshotAs("Скриншот");
         Attach.pageSource();
         Attach.browserConsoleLogs();
-        Attach.video();
+        Attach.webVideo();
         if (useRemote.equals("remote")) {
-            Attach.video();
+            Attach.webVideo();
         }
         closeWebDriver();
     }

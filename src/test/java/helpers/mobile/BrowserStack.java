@@ -9,7 +9,7 @@ public class BrowserStack {
 
     static BrowserstackConfig config = ConfigFactory.create(BrowserstackConfig.class);
 
-    public static String videoUrl(String sessionId) {
+    public static String mobileVideoUrl(String sessionId) {
         return given()
                 .auth().basic(config.user(), config.key())
                 .when()
