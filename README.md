@@ -61,6 +61,8 @@
       </a>
       <br>Gradle
     </td>
+      </tr>
+  <tr>
     <td align="center" width="96">
       <a href="https://www.jenkins.io/" >
         <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Jenkins.svg" width="48" height="48" alt="Jenkins" />
@@ -79,8 +81,6 @@
       </a>
       <br>Selenium
     </td>
-  </tr>
-  <tr>
       <td align="center" width="96">
       <a href="https://github.com">
         <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/GitHub.svg" width="48" height="48" alt="GitHub" />
@@ -99,6 +99,8 @@
       </a>
       <br>Browserstack
     </td>
+      </tr>
+  <tr>
     <td align="center"  width="96">
       <a href="https://appium.io/">
         <img src="https://github.com/Ucsus/leprosorium.ru/blob/main/src/test/resources/images/logos/Appium.svg" width="48" height="48" alt="Appium" />
