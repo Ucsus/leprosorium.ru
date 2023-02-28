@@ -53,7 +53,7 @@ public class MainPage {
         return this;
     }
 
-    @Step("Пишем сообщение: {messageText}")
+    @Step("Пишем сообщение: {messageText}") //wtf
     public MainPage writeMessage(String messageText) {
         chatInput.sendKeys(messageText);
         chatInput.pressEnter();
